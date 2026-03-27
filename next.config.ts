@@ -1,17 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: 'export', // අනිවාර්යයෙන්ම මේ line එක තියෙන්න ඕනේ
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.pexels.com',
-      },
-    ],
+    unoptimized: true, // Static export එකේදී images වැඩ කරන්න මේක ඕනේ
   },
 };
 
