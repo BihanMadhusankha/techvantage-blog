@@ -25,5 +25,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./out/ # Next.js static output එක (Astro නම් ./dist/)
-          server-dir: /public_html/ # Hostinger එකේ සයිට් එක තියෙන තැන
+          local-dir: ./out/
+          server-dir: /public_html/
+          protocol: ftp
+          port: 21
