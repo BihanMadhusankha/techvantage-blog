@@ -15,7 +15,7 @@ export function Hero() {
                 Master the Tech Trends of 2026
               </h1>
               <p className="max-w-[600px] text-neutral-500 md:text-xl dark:text-neutral-400">
-                From autonomous AI agents to sustainable sodium-ion batteries, 
+                From autonomous AI agents to sustainable sodium-ion batteries,
                 we provide the in-depth guides you need to navigate the next frontier of innovation.
               </p>
             </div>

@@ -41,6 +41,8 @@ export default function HomePage() {
                       fill
                       // 4. මුල්ම පෝස්ට් එකට විතරක් priority දුන්නා (Hero එකට පස්සේ ලෝඩ් වෙන්න)
                       priority={index === 0}
+                      fetchPriority="high" // <--- මේක අලුතෙන් ඇඩ් කරපන්
+                      loading="eager"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
