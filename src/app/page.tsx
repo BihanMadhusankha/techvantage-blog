@@ -16,28 +16,31 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
-      
+
+      {/* 1. මේක තමයි ප්‍රධානම තැන. Hero එක ඇතුළේ තියෙන Image එකට 'priority' තියෙන්නම ඕනේ */}
       <Hero />
 
       <section className="container mx-auto px-4 py-12 md:px-6 lg:px-8">
         <AdPlaceholder type="header" />
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Main Content: Blog Feed */}
           <div className="lg:col-span-8 space-y-12">
             <h2 className="text-2xl font-bold border-b pb-4 uppercase tracking-widest text-neutral-400">
               Latest "How-To" Guides
             </h2>
-            
+
             <div className="grid gap-12">
-              {POSTS.map((post) => (
+              {POSTS.map((post, index) => ( // 2. මෙතන 'index' එක ගත්තා
                 <article key={post.id} className="grid grid-cols-1 md:grid-cols-5 gap-6 group">
                   <div className="md:col-span-2 relative aspect-[16/10] overflow-hidden rounded-lg bg-neutral-100">
-                    <Image 
-                      src={`${post.image.split('?')[0]}?auto=format&fit=crop&q=75&w=800`} 
+                    <Image
+                      // 3. Image quality එක 75 සිට 65 දක්වා අඩු කරා (Mobile speed වලට පට්ටම වැදගත්)
+                      src={`${post.image.split('?')[0]}?auto=format&fit=crop&q=65&w=800`}
                       alt={post.title}
                       fill
-                      priority={post.id === '1' || post.id === '6'} 
+                      // 4. මුල්ම පෝස්ට් එකට විතරක් priority දුන්නා (Hero එකට පස්සේ ලෝඩ් වෙන්න)
+                      priority={index === 0}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
