@@ -145,4 +145,15 @@ Running LLMs locally on Windows in 2026 is no longer a "niche hobby"—it is a *
     `,
     author: 'Chief AI Architect',
   },
+  {
+    id: '7',
+    title: 'Sony PS5 Price Hike 2026: Why Prices are Skyrocketing and How to Save $150 Before April 2nd',
+    slug: 'sony-ps5-price-hike-2026',
+    description: 'Official Sony PS5 family price increase effective April 2, 2026. Learn about the RAMeggedon factor and how to secure your console at the old price.',
+    category: 'Hardware',
+    date: '2026-03-27',
+    image: 'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&q=80&w=1200',
+    content: 'Full analysis of the 2026 PS5 price hike...',
+    author: 'Bihan Madhusankha',
+  },
 ];
