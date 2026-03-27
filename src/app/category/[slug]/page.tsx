@@ -7,6 +7,13 @@ interface CategoryPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export async function generateStaticParams() {
+  const categories = ['software', 'hardware', 'ai', 'tutorials'];
+  return categories.map((slug) => ({
+    slug: slug,
+  }));
+}
+
 export async function generateMetadata({ params }: CategoryPageProps) {
   const { slug } = await params;
   const categoryName = slug.charAt(0).toUpperCase() + slug.slice(1);
