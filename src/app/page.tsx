@@ -34,9 +34,11 @@ export default function HomePage() {
                 <article key={post.id} className="grid grid-cols-1 md:grid-cols-5 gap-6 group">
                   <div className="md:col-span-2 relative aspect-[16/10] overflow-hidden rounded-lg bg-neutral-100">
                     <Image 
-                      src={post.image} 
+                      src={`${post.image.split('?')[0]}?auto=format&fit=crop&q=75&w=800`} 
                       alt={post.title}
                       fill
+                      priority={post.id === '1' || post.id === '6'} 
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>

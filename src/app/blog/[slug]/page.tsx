@@ -151,10 +151,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       <div className="relative aspect-[21/9] w-full mb-12 overflow-hidden rounded-xl bg-neutral-100 shadow-xl">
         <Image 
-          src={post.image} 
+          src={`${post.image.split('?')[0]}?auto=format&fit=crop&q=75&w=1600`} 
           alt={post.title}
           fill
           priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1200px"
           className="object-cover"
         />
       </div>
