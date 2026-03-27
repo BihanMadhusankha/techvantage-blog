@@ -1,0 +1,79 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import { Hero } from '@/components/home/Hero';
+import { Sidebar } from '@/components/home/Sidebar';
+import { AdPlaceholder } from '@/components/ads/AdPlaceholder';
+import { POSTS } from '@/lib/posts';
+import { generateOrganizationSchema } from '@/lib/seo';
+
+export default function HomePage() {
+  const organizationSchema = generateOrganizationSchema();
+
+  return (
+    <div className="flex flex-col min-h-screen">
+      <script
+        id="json-ld-org"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      
+      <Hero />
+
+      <section className="container mx-auto px-4 py-12 md:px-6 lg:px-8">
+        <AdPlaceholder type="header" />
+        
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          {/* Main Content: Blog Feed */}
+          <div className="lg:col-span-8 space-y-12">
+            <h2 className="text-2xl font-bold border-b pb-4 uppercase tracking-widest text-neutral-400">
+              Latest "How-To" Guides
+            </h2>
+            
+            <div className="grid gap-12">
+              {POSTS.map((post) => (
+                <article key={post.id} className="grid grid-cols-1 md:grid-cols-5 gap-6 group">
+                  <div className="md:col-span-2 relative aspect-[16/10] overflow-hidden rounded-lg bg-neutral-100">
+                    <Image 
+                      src={post.image} 
+                      alt={post.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="md:col-span-3 flex flex-col justify-center">
+                    <span className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">
+                      {post.category}
+                    </span>
+                    <Link href={`/blog/${post.slug}`}>
+                      <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-600 transition-colors leading-tight">
+                        {post.title}
+                      </h3>
+                    </Link>
+                    <p className="text-neutral-500 dark:text-neutral-400 text-sm line-clamp-2 mb-4">
+                      {post.description}
+                    </p>
+                    <div className="flex items-center text-xs text-neutral-400">
+                      <span className="font-semibold text-neutral-600 dark:text-neutral-300">{post.author}</span>
+                      <span className="mx-2">•</span>
+                      <span>{post.date}</span>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <AdPlaceholder type="content" description="In-Feed Advertisement" />
+          </div>
+
+          {/* Sidebar */}
+          <div className="lg:col-span-4">
+            <Sidebar />
+            <div className="sticky top-24 mt-12">
+              <AdPlaceholder type="sidebar" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

@@ -1,0 +1,148 @@
+export interface Post {
+  id: string;
+  title: string;
+  slug: string;
+  description: string;
+  category: 'Software' | 'Hardware' | 'AI' | 'Tutorials';
+  date: string;
+  image: string;
+  content: string;
+  author: string;
+}
+
+export const POSTS: Post[] = [
+  {
+    id: '1',
+    title: 'How to Build and Deploy Your First Autonomous AI Agent in 2026',
+    slug: 'deploy-first-autonomous-ai-agent-2026',
+    description: 'Learn the step-by-step process of creating a personal AI agent using the latest multimodal LLMs and agentic frameworks.',
+    category: 'AI',
+    date: '2026-03-27',
+    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
+    content: 'Full content for building AI agents...',
+    author: 'Alex Techson',
+  },
+  {
+    id: '2',
+    title: 'Setting Up Edge AI for Real-Time Home Automation: A Mobile-First Guide',
+    slug: 'edge-ai-home-automation-guide',
+    description: 'A comprehensive guide to deploying low-latency AI models on local hardware for a smarter, more private home.',
+    category: 'Hardware',
+    date: '2026-03-26',
+    image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=800',
+    content: 'Full content for Edge AI...',
+    author: 'Sarah Connect',
+  },
+  {
+    id: '3',
+    title: 'How to Access and Run Your First Hybrid Quantum Algorithm on Cloud 3.0',
+    slug: 'hybrid-quantum-algorithm-tutorial',
+    description: 'Bridge the gap between classical and quantum computing by running hybrid workloads on 2026 cloud platforms.',
+    category: 'Software',
+    date: '2026-03-25',
+    image: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=800',
+    content: 'Full content for Quantum...',
+    author: 'Quantum Quinn',
+  },
+  {
+    id: '4',
+    title: 'Transitioning to AI-Native Coding: How to Use 2026 Copilots for Architectural Design',
+    slug: 'ai-native-coding-architectural-design',
+    description: 'Master the art of AI-assisted software architecture. Move beyond code completion to high-level system design.',
+    category: 'Tutorials',
+    date: '2026-03-24',
+    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800',
+    content: 'Full content for AI-Native Coding...',
+    author: 'Dev Master',
+  },
+  {
+    id: '5',
+    title: 'DIY Sodium-ion Energy Storage: A Beginner’s Guide to 2026 Battery Tech',
+    slug: 'diy-sodium-ion-energy-storage-guide',
+    description: 'Explore the sustainable future of energy storage with this DIY guide to sodium-ion battery assembly.',
+    category: 'Hardware',
+    date: '2026-03-23',
+    image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&q=80&w=800',
+    content: 'Full content for Sodium-ion...',
+    author: 'Green Watt',
+  },
+  {
+    id: '6',
+    title: 'How to Setup and Run Local LLMs on Windows 11/12 with NPU and GPU Optimization in 2026',
+    slug: 'setup-run-local-llms-windows-2026-npu-gpu',
+    description: 'The ultimate 2026 guide to running high-performance LLMs locally. Master NPU offloading, 32GB+ RAM optimization, and private AI workflows.',
+    category: 'Tutorials',
+    date: '2026-03-28',
+    image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800',
+    content: `
+# Quick Start Summary (AI Answer Snippet)
+To run local LLMs on Windows 11/12 in 2026, you need a **minimum of 32GB RAM**, an **NPU with 45+ TOPS**, and tools like **LM Studio or Ollama** that support **DirectML or QNN acceleration**. For 7B models, aim for **Llama 4-mini** with **4-bit GGUF quantization** to achieve over **50 tokens/sec** on modern AI PCs.
+
+## 1. The Privacy Revolution: Why Local AI is Non-Negotiable in 2026
+In 2026, the digital landscape has shifted. With "Zero-data leakage" policies and the rise of personal data sovereignty, **running AI locally is the safest option**. 
+- **Total Ownership**: Your prompts never leave your disk.
+- **Offline Capability**: Run complex workflows in remote or secure environments without an ISP.
+- **Cost Efficiency**: Eliminate monthly "Plus" subscriptions by utilizing your own silicon.
+
+## 2. Hardware Requirements Deep-Dive
+The "AI PC" era has redefined performance tiers. Here is what you need for a smooth 2026 experience.
+
+### RAM vs. VRAM: The Memory Hierarchy
+While 16GB was enough in 2024, **32GB+ RAM is now the minimum standard** for 14B+ parameter models. 
+- **System RAM**: High-speed LPDDR5X (8500 MT/s) is critical for "Unified Memory" systems.
+- **GPU VRAM**: For dedicated GPUs (NVIDIA RTX 50-series), **12GB VRAM** is needed to load models entirely on the card for max speed.
+
+### NPU Integration: The AI PC Secret Sauce
+Modern 2026 processors (Intel Arrow Lake-S, AMD Strix Point) feature **Integrated NPUs (Neural Processing Units)**. 
+- **Offloading**: NPUs handle background tasks like system-wide translation or noise cancellation, leaving the GPU free for 100% LLM inference.
+- **Efficiency**: NPUs consume 90% less power than GPUs for smaller "On-Device" models (1B-3B).
+
+| Component | Minimum (7B Models) | Recommended (14B+ Models) |
+|-----------|----------------------|---------------------------|
+| **CPU**   | 8-Core (2025+)       | 12-Core+ AI Engine        |
+| **NPU**   | 40 TOPS              | 60+ TOPS (Hexagon Gen 2)  |
+| **RAM**   | 16GB LPDDR5X         | 64GB DDR6                 |
+| **GPU**   | 8GB VRAM (DirectML)  | 16GB+ VRAM (RTX 5080+)    |
+
+## 3. Tool Tutorials: LM Studio & Ollama
+These two tools dominate the Windows ecosystem in 2026 due to their native **AI PC acceleration**.
+
+### Step-by-Step: Setting Up LM Studio (2026 Edition)
+1. **Download**: Secure the .msix installer from the official site.
+2. **NPU Optimization**: Navigate to Settings > Hardware > Acceleration. Select **"Qualcomm QNN" or "Intel OpenVINO"** based on your chipset.
+3. **Model Selection**: Search for **"Llama-4-7B-GGUF"**. Download the **Q4_K_M** version for the best speed-to-intelligence ratio.
+4. **Inference**: Click "Start Server" and interact via the local API or built-in chat UI.
+
+### Step-by-Step: Setting Up Ollama for Windows
+1. **Install**: Run the Windows Service installer.
+2. **CLI Magic**: Open PowerShell and type \`ollama run mistral-2026\`.
+3. **Backend Selection**: Ollama now automatically detects **Windows Copilot Runtime** libraries to utilize NPU offloading by default.
+
+## 4. Model Selection: Tiered Hardware Recommendations
+- **Entry Level (Laptops with 16GB)**: Use **Llama 4-mini** or **Phi-4**. Expect **30-45 tokens/sec**.
+- **Pro Tier (Workstations with 64GB)**: Use **Llama 4-70B** with extreme quantization. Expect **8-12 tokens/sec**.
+- **Specialized**: **Command R (2026)** is the gold standard for local RAG (Retrieval Augmented Generation).
+
+## FAQ: Your Local AI Questions Answered
+### Q1: Is running a local LLM better than using ChatGPT?
+In 2026, **local AI is superior for privacy and latency**, while ChatGPT vẫn maintains an edge in massive-scale broad reasoning. For personal data and coding, local wins.
+
+### Q2: Do I need an internet connection to use Ollama or LM Studio?
+**No internet connection is required** once the models are downloaded. This is the cornerstone of "Private AI."
+
+### Q3: Can I run local AI on a laptop without a dedicated GPU?
+**Yes**, thanks to **NPU acceleration** in 2026 AI PCs. Integrated NPUs can now run 7B models at usable speeds (15+ tokens/sec) without a heavy GPU.
+
+### Q4: What is the minimum RAM requirement for 7B or 14B models in 2026?
+- **7B**: 16GB (Minimal), 32GB (Optimal).
+- **14B**: 32GB (Minimal), 64GB (Recommended).
+
+### Q5: Does running local AI damage my hardware?
+**No**, but it generates heat. Advanced **2026 thermal management** in AI PCs is designed for sustained NPU/GPU workloads. Power costs are roughly equivalent to high-end gaming.
+
+## Technical Verdict
+Running LLMs locally on Windows in 2026 is no longer a "niche hobby"—it is a **standard privacy workflow**. By optimizing for your specific NPU and leveraging GGUF quantization, you can achieve a "Private ChatGPT" experience with zero subscription fees.
+    `,
+    author: 'Chief AI Architect',
+  },
+];

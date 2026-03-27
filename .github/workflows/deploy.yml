@@ -1,0 +1,29 @@
+name: Deploy TechVantage to Hostinger
+
+on:
+  push:
+    branches:
+      - main  # උඹේ main branch එකට push කරද්දී වැඩේ වෙන්නේ
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run build # Next.js/Astro static build එක ගන්නවා
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./out/ # Next.js static output එක (Astro නම් ./dist/)
+          server-dir: /public_html/ # Hostinger එකේ සයිට් එක තියෙන තැන
