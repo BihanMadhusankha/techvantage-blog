@@ -156,4 +156,15 @@ Running LLMs locally on Windows in 2026 is no longer a "niche hobby"—it is a *
     content: 'Full analysis of the 2026 PS5 price hike...',
     author: 'Bihan Madhusankha',
   },
+  {
+    id: '8',
+    title: 'Claude 4.6 Opus vs. Gemini 3.1 Pro: The Battle for Frontier-Level AI Reasoning in 2026',
+    slug: 'claude-4-6-vs-gemini-3-1-comparison',
+    description: 'A deep dive comparison into the March 2026 AI frontier releases. Discover how Claude 4.6\'s Adaptive Thinking stacks up against Gemini 3.1\'s Deep Think mode.',
+    category: 'AI',
+    date: '2026-03-28',
+    image: '/blog/claude-4-6-vs-gemini-3-1.png',
+    content: 'Frontier AI comparison between Claude 4.6 and Gemini 3.1...',
+    author: 'Bihan Madhusankha',
+  },
 ];
