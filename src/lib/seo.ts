@@ -3,7 +3,8 @@ import { Metadata } from 'next';
 export const SITE_CONFIG = {
   name: 'TechVantage',
   description: 'The premier destination for 2026 tech trends, AI agent deployment, and next-gen hardware guides.',
-  url: 'https://techvantage.blog', // Replace with actual domain
+  url: 'https://www.techvantage.blog', // Updated to match GSC configuration
+
   ogImage: '/og-image.png',
   links: {
     twitter: 'https://twitter.com/techvantage',
