@@ -9,6 +9,10 @@ import { generateOrganizationSchema } from '@/lib/seo';
 export default function HomePage() {
   const organizationSchema = generateOrganizationSchema();
 
+  const latestPosts = [...POSTS]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 5);
+
   return (
     <div className="flex flex-col min-h-screen">
       <script
@@ -31,7 +35,7 @@ export default function HomePage() {
             </h2>
 
             <div className="grid gap-12">
-              {POSTS.map((post, index) => ( // 2. මෙතන 'index' එක ගත්තා
+              {latestPosts.map((post, index) => ( // 2. මෙතන 'index' එක ගත්තා
                 <article key={post.id} className="grid grid-cols-1 md:grid-cols-5 gap-6 group">
                   <div className="md:col-span-2 relative aspect-[16/10] overflow-hidden rounded-lg bg-neutral-100">
                     <Image

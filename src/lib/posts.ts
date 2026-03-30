@@ -167,4 +167,15 @@ Running LLMs locally on Windows in 2026 is no longer a "niche hobby"—it is a *
     content: 'Frontier AI comparison between Claude 4.6 and Gemini 3.1...',
     author: 'Bihan Madhusankha',
   },
+  {
+    id: '9',
+    title: 'Google Pixel 10a Review: The Flat Design King that Finally Dumps the Camera Bump',
+    slug: 'google-pixel-10a-review-no-camera-bump',
+    description: 'The Google Pixel 10a completely ditches the camera bump for a clean, flat design. But with the recycled Tensor G4 and limited AI features, is the $499 price worth it?',
+    category: 'Hardware',
+    date: '2026-03-30',
+    image: '/blog/pixel-10a-flat-design.webp',
+    content: 'Full review of the Google Pixel 10a flat design and features...',
+    author: 'Bihan Madhusankha',
+  },
 ];
