@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Redirect non-www to www (Fixes 403 on non-www)
+  RewriteCond %{HTTP_HOST} ^techvantage\.blog [NC]
+  RewriteRule ^(.*)$ https://www.techvantage.blog/$1 [L,R=301]
+
+  # Redirect if ending in .html to remove the .html extension
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+  RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+  # If the requested URI doesn't end in .html, and there is no such directory...
+  RewriteCond %{REQUEST_URI} !\.html$
+  RewriteCond %{REQUEST_FILENAME} !-d
+  # ...and an .html file with that name exists, rewrite to the .html file.
+  RewriteCond %{REQUEST_FILENAME}\.html -f
+  RewriteRule ^(.*)$ $1.html [L]
+</IfModule>
+
+# Disable directory listing to avoid 403 Forbidden errors when looking for index
+Options -Indexes
