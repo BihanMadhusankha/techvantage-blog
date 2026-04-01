@@ -189,4 +189,15 @@ Running LLMs locally on Windows in 2026 is no longer a "niche hobby"—it is a *
     content: 'Full analysis of Microsoft Copilot Cowork 2026 Agentic Architecture...',
     author: 'Bihan Madhusankha',
   },
+  {
+    id: '11',
+    title: 'Apple iPhone 18 Pro: Latest Leaks Signal a Major Nano Island Redesign',
+    slug: 'apple-iphone-18-pro-design-leak-2026',
+    description: 'Multiple credible leakers now point to a dramatically smaller Dynamic Island on the iPhone 18 Pro and Pro Max — now leaked as the "Nano Island." We rank every source by credibility and explain the Face ID implications.',
+    category: 'Hardware',
+    date: '2026-04-01',
+    image: '/blog/iphone-18-pro-nano-island-hero.webp',
+    content: 'Full analysis of the Apple iPhone 18 Pro Nano Island design leak...',
+    author: 'Bihan Madhusankha',
+  },
 ];
