@@ -12,13 +12,13 @@ export default function PrivacyPage() {
         <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 text-blue-600">
           Privacy Policy
         </h1>
-        <p className="text-neutral-500">Last Updated: March 27, 2026</p>
+        <p className="text-neutral-500">Last Updated: April 2, 2026</p>
       </header>
 
       <div className="prose dark:prose-invert lg:prose-lg max-w-none space-y-8">
         <section>
           <p>
-            At <strong>TechVantage</strong>, accessible from techvantage.demo, one of our main priorities is the privacy of our visitors. 
+            At <strong>TechVantage</strong>, accessible from <a href="https://www.techvantage.blog" className="text-blue-600 hover:underline">techvantage.blog</a>, one of our main priorities is the privacy of our visitors. 
             This Privacy Policy document contains types of information that is collected and recorded by TechVantage 
             and how we use it to improve your experience.
           </p>

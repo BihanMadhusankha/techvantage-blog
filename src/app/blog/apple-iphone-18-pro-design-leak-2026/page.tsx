@@ -39,7 +39,7 @@ export default function IPhone18ProDesignLeakPage() {
   const blogSchema = generateBlogPostSchema({
     title: "Apple iPhone 18 Pro: Nano Island Leak Signals Biggest Display Redesign in Years",
     description: "The iPhone 18 Pro is set to debut a dramatically smaller Dynamic Island — now leaked as 'Nano Island.' We break down every credible leak, what it means for Face ID, and the iPhone Fold impact.",
-    date: "2026-04-01",
+    date: "2026-04-02",
     url: "https://techvantage.blog/blog/apple-iphone-18-pro-design-leak-2026",
     image: "https://techvantage.blog/blog/iphone-18-pro-nano-island-hero.webp",
     author: "Bihan Madhusankha",
@@ -62,7 +62,7 @@ export default function IPhone18ProDesignLeakPage() {
           <span>•</span>
           <Link href="/category/hardware" className="hover:underline">Apple</Link>
           <span>•</span>
-          <span>April 1, 2026</span>
+          <span>April 2, 2026</span>
         </div>
         <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight text-neutral-900 dark:text-neutral-50">
           Apple iPhone 18 Pro:{' '}

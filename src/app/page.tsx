@@ -31,7 +31,7 @@ export default function HomePage() {
           {/* Main Content: Blog Feed */}
           <div className="lg:col-span-8 space-y-12">
             <h2 className="text-2xl font-bold border-b pb-4 uppercase tracking-widest text-neutral-400">
-              Latest "How-To" Guides
+              Latest Tech News &amp; Guides
             </h2>
 
             <div className="grid gap-12">
@@ -40,7 +40,7 @@ export default function HomePage() {
                   <div className="md:col-span-2 relative aspect-[16/10] overflow-hidden rounded-lg bg-neutral-100">
                     <Image
                       // 3. Image quality එක 75 සිට 65 දක්වා අඩු කරා (Mobile speed වලට පට්ටම වැදගත්)
-                      src={`${post.image.split('?')[0]}?auto=format&fit=crop&q=65&w=800`}
+                      src={post.image.startsWith('/') ? post.image : `${post.image.split('?')[0]}?auto=format&fit=crop&q=65&w=800`}
                       alt={post.title}
                       fill
                       // 4. මුල්ම පෝස්ට් එකට විතරක් priority දුන්නා (Hero එකට පස්සේ ලෝඩ් වෙන්න)
