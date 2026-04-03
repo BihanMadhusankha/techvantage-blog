@@ -211,4 +211,15 @@ Running LLMs locally on Windows in 2026 is no longer a "niche hobby"—it is a *
     content: 'Full analysis of the Google AI Pro 5TB storage upgrade...',
     author: 'Bihan Madhusankha',
   },
+  {
+    id: '13',
+    title: 'The Claude Code Leak: Kairos Daemon, Buddy Pet & Anthropic\'s Hidden AI Roadmap Revealed',
+    slug: 'anthropic-claude-code-source-leak-2026',
+    description: 'A packaging error exposed 512,000 lines of Claude Code\'s source — revealing a persistent background daemon, an AI that dreams, a Clippy-style terminal pet, and a stealth open-source mode.',
+    category: 'AI',
+    date: '2026-04-03',
+    image: '/blog/claude-code-leak-hero.webp',
+    content: 'Full investigative breakdown of the Anthropic Claude Code source code leak and its hidden feature roadmap...',
+    author: 'Bihan Madhusankha',
+  },
 ];
