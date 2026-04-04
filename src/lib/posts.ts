@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '14',
+    title: 'US Presses UK and Allies to Secure Quantum Computing Supply Chains',
+    slug: 'us-uk-quantum-supply-chain-security-2026',
+    description: 'US CTO Ethan Klein leads a mission to London to address vulnerabilities in quantum semiconductor manufacturing and rare earth materials amid commercialization shifts.',
+    category: 'Hardware',
+    date: '2026-04-04',
+    image: '/blog/quantum-supply-chain-hero.webp',
+    content: 'US and UK strengthen quantum computing supply chain security through industrial cooperation...',
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '1',
     title: 'How to Build and Deploy Your First Autonomous AI Agent in 2026',
     slug: 'deploy-first-autonomous-ai-agent-2026',

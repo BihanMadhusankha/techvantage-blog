@@ -15,6 +15,14 @@ imgs = [
         r'C:\Users\BIHAN\.gemini\antigravity\brain\6a18372c-b5bc-405f-8be8-b0a1505963ae\claude_code_features_overview_1775190677312.png',
         r'G:\Affiliate PRojects\TechVantage\public\blog\claude-code-features-overview.webp'
     ),
+    (
+        r'C:\Users\BIHAN\.gemini\antigravity\brain\9ee669ff-19c2-441b-be33-af7934b26d3a\quantum_supply_chain_hero_1775276870399.png',
+        r'G:\Affiliate PRojects\TechVantage\public\blog\quantum-supply-chain-hero.webp'
+    ),
+    (
+        r'C:\Users\BIHAN\.gemini\antigravity\brain\9ee669ff-19c2-441b-be33-af7934b26d3a\quantum_semiconductor_manufacturing_1775276888786.png',
+        r'G:\Affiliate PRojects\TechVantage\public\blog\quantum-semiconductor-manufacturing.webp'
+    ),
 ]
 
 for src, dst in imgs:
