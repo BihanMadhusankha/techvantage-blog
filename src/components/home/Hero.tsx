@@ -44,6 +44,7 @@ export function Hero() {
                 alt="Google AI Pro plan upgraded to 5TB cloud storage concept visualization"
                 fill
                 priority
+                fetchPriority="high"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
