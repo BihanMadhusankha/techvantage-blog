@@ -12,6 +12,195 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '18',
+    title: 'PS6 Pricing: 41% of Gamers Would Pay $699 or More for PlayStation 6',
+    slug: 'ps6-price-prediction-2027-digital-foundry-poll',
+    description: 'A Digital Foundry poll of 50,000+ viewers reveals 41% would pay $699+ for PlayStation 6. We break down the data, bill of materials estimates, rumored specs, and what the PS6 could actually cost at launch.',
+    category: 'Hardware',
+    date: '2026-04-12',
+    image: '/blog/ps6-price-hero.webp',
+    content: `
+<div class="ps6-article-container space-y-8 font-sans">
+
+  <!-- Creative AI View Box -->
+  <div class="quick-answer bg-gradient-to-br from-blue-900 via-indigo-900 to-slate-900 text-white p-8 md:p-10 rounded-3xl shadow-2xl mb-12 relative overflow-hidden border border-blue-500/30">
+    <div class="absolute -top-24 -right-24 md:-top-12 md:-right-12 opacity-10 pointer-events-none">
+      <svg class="w-64 h-64" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+    </div>
+    <div class="relative z-10">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="flex h-3 w-3 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+        </span>
+        <h3 class="text-sm font-bold uppercase tracking-widest text-blue-300">AI Overview: Quick Answer</h3>
+      </div>
+      <p class="text-xl md:text-2xl font-light leading-relaxed mb-4">
+        According to an April 2026 poll of over <strong>50,000 respondents</strong>, an incredible <strong>41% of US gamers</strong> are willing to pay an MSRP of <strong>$699 or more</strong> for the upcoming PlayStation 6.
+      </p>
+      <p class="text-blue-100/80 text-base md:text-lg border-l-4 border-blue-500 pl-4">
+        Industry estimates project Sony's Bill of Materials (BOM) for the PS6 at approximately <strong>$740–$760 per unit</strong>, making a premium retail price point nearly inevitable for the American market.
+      </p>
+    </div>
+  </div>
+
+  <p class="text-xl leading-relaxed text-neutral-700 dark:text-neutral-300">
+    The gaming community has spoken — and the numbers are eye-opening. After tallying more than <strong>50,000 votes</strong> on the Digital Foundry YouTube channel, the data paints a clear picture: a massive segment of the PlayStation faithful is mentally and financially prepared for a serious price hike on the next-gen console.
+  </p>
+  <p class="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
+    Here is everything American gamers need to know about US pricing, what the community thinks, what it costs Sony to build, and whether a $699+ price tag is actually justified.
+  </p>
+
+  <h2 class="text-3xl font-bold mt-16 mb-8 text-neutral-900 dark:text-white flex items-center gap-4">
+    <span class="text-blue-600 dark:text-blue-400">01.</span> The Digital Foundry Poll: Breaking Down 50,000+ Votes
+  </h2>
+
+  <p class="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300 mb-6">
+    Digital Foundry — one of the most respected digital video game analysis outlets on YouTube — ran a public poll asking one deceptively simple question: <strong>"What's the maximum you'd pay for PlayStation 6?"</strong>
+  </p>
+
+  <!-- Styled Table -->
+  <div class="bg-white dark:bg-neutral-900 shadow-xl rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800 mb-10">
+    <div class="bg-neutral-50 dark:bg-neutral-950 p-4 border-b border-neutral-200 dark:border-neutral-800">
+      <h3 class="font-bold text-neutral-800 dark:text-neutral-200 text-center">PS6 Price Tolerance Data (April 2026)</h3>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="bg-blue-50/50 dark:bg-blue-900/10">
+            <th class="py-4 px-6 text-blue-600 dark:text-blue-400 font-black uppercase tracking-wider text-sm">Price Tier (USD)</th>
+            <th class="py-4 px-6 text-neutral-500 font-bold uppercase tracking-wider text-sm">YouTube Poll (50K+ voters)</th>
+            <th class="py-4 px-6 text-neutral-500 font-bold uppercase tracking-wider text-sm">Enthusiast Poll (711 voters)</th>
+          </tr>
+        </thead>
+        <tbody class="text-neutral-700 dark:text-neutral-300">
+          <tr class="border-b border-neutral-100 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-800/50 transition-colors">
+            <td class="py-4 px-6 font-bold text-lg">$499</td>
+            <td class="py-4 px-6">25%</td>
+            <td class="py-4 px-6">21%</td>
+          </tr>
+          <tr class="border-b border-neutral-100 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-800/50 transition-colors">
+            <td class="py-4 px-6 font-bold text-lg text-blue-600 dark:text-blue-400">$599 (Most Popular)</td>
+            <td class="py-4 px-6 font-bold">34%</td>
+            <td class="py-4 px-6">28%</td>
+          </tr>
+          <tr class="border-b border-neutral-100 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-800/50 transition-colors">
+            <td class="py-4 px-6 font-bold text-lg">$699</td>
+            <td class="py-4 px-6">~17%</td>
+            <td class="py-4 px-6">~27%</td>
+          </tr>
+          <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50 transition-colors">
+            <td class="py-4 px-6 font-bold text-lg text-red-500">$799+</td>
+            <td class="py-4 px-6 text-red-500 font-bold">~24%</td>
+            <td class="py-4 px-6 text-red-500 font-bold">~24%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300 mb-8">
+    The <strong>combined $699+ category captured 41% of YouTube respondents</strong> — a striking figure that signals strong consumer tolerance for a premium price point, especially compared to the PS5 Disc Edition's $499 launch price in the US back in 2020.
+  </p>
+
+  <!-- Image 1: Info Chart -->
+  <figure class="my-12 relative rounded-3xl overflow-hidden shadow-2xl group border border-neutral-200 dark:border-neutral-800">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent group-hover:opacity-0 transition-opacity duration-500 z-10 pointer-events-none"></div>
+    <img src="/blog/ps6-price-poll-chart.webp" alt="PS6 Price Poll Chart — Digital Foundry Results Breakdown infographic" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700 block" />
+    <figcaption class="absolute bottom-0 w-full p-6 text-white text-sm md:text-base font-medium z-20 pointer-events-none transform translate-y-0 group-hover:translate-y-4 group-hover:opacity-0 transition-all duration-300">
+      Visualizing the 2026 Digital Foundry PS6 Pricing Poll Data
+    </figcaption>
+  </figure>
+
+  <h2 class="text-3xl font-bold mt-16 mb-8 text-neutral-900 dark:text-white flex items-center gap-4">
+    <span class="text-blue-600 dark:text-blue-400">02.</span> Why Is PS6 Projected to Be So Expensive?
+  </h2>
+
+  <p class="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300 mb-6">
+    The root cause is silicon and supply chain economics. Two respected industry analysts — <strong>Moore's Law Is Dead</strong> and <strong>Kepler_L2</strong> — have both independently estimated the PlayStation 6's bill of materials (BOM) at approximately <strong>$740 to $760 per unit</strong>. This is what it costs Sony to manufacture a single PS6 console before shipping, marketing, retail margins, or US regional tax is factored in.
+  </p>
+
+  <!-- Callout Grid -->
+  <div class="grid md:grid-cols-2 gap-6 my-10">
+    <div class="p-6 rounded-2xl bg-neutral-100 dark:bg-neutral-900 border-l-4 border-blue-500">
+      <h4 class="font-bold text-lg mb-2 text-neutral-900 dark:text-white">💣 Advanced GDDR7 Memory</h4>
+      <p class="text-neutral-600 dark:text-neutral-400 text-sm">With the PS6 rumored to pack <strong>30GB+ of unified GDDR7 memory</strong>, RAM alone could account for $120–$150 of the BOM.</p>
+    </div>
+    <div class="p-6 rounded-2xl bg-neutral-100 dark:bg-neutral-900 border-l-4 border-indigo-500">
+      <h4 class="font-bold text-lg mb-2 text-neutral-900 dark:text-white">🔬 TSMC 3nm Node</h4>
+      <p class="text-neutral-600 dark:text-neutral-400 text-sm">The custom AMD "Orion" APU (Zen 6 + RDNA 5) is expected to be manufactured on TSMC's cutting-edge, highly expensive 3nm process.</p>
+    </div>
+    <div class="p-6 rounded-2xl bg-neutral-100 dark:bg-neutral-900 border-l-4 border-purple-500">
+      <h4 class="font-bold text-lg mb-2 text-neutral-900 dark:text-white">🔥 Compact Thermal Design</h4>
+      <p class="text-neutral-600 dark:text-neutral-400 text-sm">Rumored to feature a smaller chassis than the PS5, requiring advanced vapor chambers to keep the dense 3nm internals cool.</p>
+    </div>
+    <div class="p-6 rounded-2xl bg-red-50 dark:bg-red-900/10 border-l-4 border-red-500">
+      <h4 class="font-bold text-lg mb-2 text-red-900 dark:text-red-400">🇺🇸 US Import Tariffs</h4>
+      <p class="text-red-700 dark:text-red-300 text-sm">Geopolitical factors in 2026, particularly US import tariffs on electronics manufactured in Asia, could add another <strong>$50–$150</strong> to the effective retail cost in the States.</p>
+    </div>
+  </div>
+
+  <h2 class="text-3xl font-bold mt-16 mb-8 text-neutral-900 dark:text-white flex items-center gap-4">
+    <span class="text-blue-600 dark:text-blue-400">03.</span> Rumored PS6 Specs: What You're Actually Paying For
+  </h2>
+
+  <!-- Image 2: Hardware -->
+  <figure class="my-10 relative rounded-3xl overflow-hidden shadow-2xl group border border-neutral-200 dark:border-neutral-800">
+    <img src="/blog/ps6-specs-hardware.webp" alt="PlayStation 6 Rumored Internal Hardware: AMD Zen 6, RDNA 5, GDDR7" class="w-full h-auto object-cover transform hover:scale-110 transition-transform duration-1000 origin-center block" />
+    <div class="absolute top-4 right-4 bg-black/70 backdrop-blur-md px-4 py-2 rounded-full text-white text-xs font-bold tracking-widest uppercase shadow-lg border border-white/20">
+      Hardware Concept
+    </div>
+  </figure>
+
+  <p class="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300 mb-6">
+    Based on credible leaks compiled from verified industry sources, here is what the PlayStation 6 is expected to deliver under the hood:
+  </p>
+
+  <div class="bg-neutral-900 text-white rounded-3xl p-8 mb-12 shadow-[0_0_40px_-10px_rgba(59,130,246,0.3)] border border-neutral-800 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 pointer-events-none"></div>
+    <ul class="grid md:grid-cols-2 gap-4 relative z-10 text-sm md:text-base">
+      <li class="flex items-center gap-4 p-4 bg-neutral-800/50 rounded-xl"><span class="text-blue-400 font-bold w-1/3">CPU Details</span> <span>AMD Zen 6 (Custom)</span></li>
+      <li class="flex items-center gap-4 p-4 bg-neutral-800/50 rounded-xl"><span class="text-blue-400 font-bold w-1/3">GPU Arch</span> <span>AMD RDNA 5</span></li>
+      <li class="flex items-center gap-4 p-4 bg-neutral-800/50 rounded-xl"><span class="text-blue-400 font-bold w-1/3">APU Name</span> <span>"Orion" (Home Console)</span></li>
+      <li class="flex items-center gap-4 p-4 bg-neutral-800/50 rounded-xl"><span class="text-blue-400 font-bold w-1/3">Node</span> <span>TSMC 3nm</span></li>
+      <li class="flex items-center gap-4 p-4 bg-neutral-800/50 rounded-xl"><span class="text-blue-400 font-bold w-1/3">Memory</span> <span>30GB–40GB GDDR7</span></li>
+      <li class="flex items-center gap-4 p-4 bg-neutral-800/50 rounded-xl"><span class="text-blue-400 font-bold w-1/3">Ray Tracing</span> <span>6–12x boost over PS5</span></li>
+    </ul>
+  </div>
+
+  <h2 class="text-3xl font-bold mt-16 mb-8 text-neutral-900 dark:text-white flex items-center gap-4">
+    <span class="text-blue-600 dark:text-blue-400">04.</span> The Multi-Device PS6 Strategy
+  </h2>
+
+  <p class="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300 mb-6">
+    One of the most significant variables in the PS6 pricing equation is that Sony appears to be planning <strong>multiple devices</strong> for the next generation. If Sony launches a genuine high-performance handheld alongside the PS6, consumer expectations around value-for-money will be reshaped entirely in the US market.
+  </p>
+
+  <div class="flex flex-col md:flex-row gap-6 mb-12">
+    <div class="flex-1 bg-white dark:bg-neutral-900 p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 shadow-xl text-center group hover:-translate-y-2 transition-transform duration-300">
+      <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+        <svg class="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path></svg>
+      </div>
+      <h3 class="text-xl font-black mb-2 tracking-tight">PS6 "Orion" Console</h3>
+      <p class="text-neutral-500 mb-4 text-sm">Flagship Home Device</p>
+      <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">~$750 BOM</div>
+    </div>
+    
+    <div class="flex-1 bg-white dark:bg-neutral-900 p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 shadow-xl text-center group hover:-translate-y-2 transition-transform duration-300 duration-delay-100">
+      <div class="w-16 h-16 bg-indigo-100 dark:bg-indigo-900/50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+        <svg class="w-8 h-8 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+      </div>
+      <h3 class="text-xl font-black mb-2 tracking-tight">PS6 Handheld</h3>
+      <p class="text-neutral-500 mb-4 text-sm">"Canis" Portable APU</p>
+      <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">~$400 BOM</div>
+    </div>
+  </div>
+
+</div>
+`,
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '14',
     title: 'US Presses UK and Allies to Secure Quantum Computing Supply Chains',
     slug: 'us-uk-quantum-supply-chain-security-2026',

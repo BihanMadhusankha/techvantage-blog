@@ -47,7 +47,7 @@ function formatContent(content: string) {
     .split('\n\n')
     .map(p => p.trim())
     .filter(p => p.length > 0)
-    .map(p => p.startsWith('<h') || p.startsWith('<li') || p.startsWith('<block') ? p : `<p class="mb-4 leading-relaxed">${p}</p>`)
+    .map(p => p.startsWith('<h') || p.startsWith('<li') || p.startsWith('<block') || p.startsWith('<div') || p.startsWith('<figure') || p.startsWith('<img') || p.startsWith('<table') || p.startsWith('<ul') ? p : `<p class="mb-4 leading-relaxed">${p}</p>`)
     .join('\n');
 }
 

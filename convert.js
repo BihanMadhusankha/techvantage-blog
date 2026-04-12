@@ -3,7 +3,7 @@ const fs = require('fs');
 
 async function convert(infile, outfile) {
     try {
-        await sharp(infile).webp().toFile(outfile);
+        await sharp(infile).webp({ quality: 88 }).toFile(outfile);
         console.log(`Successfully converted ${infile} to ${outfile}`);
     } catch (err) {
         console.error(`Error converting ${infile}:`, err);
@@ -11,7 +11,7 @@ async function convert(infile, outfile) {
 }
 
 Promise.all([
-    convert('C:\\Users\\BIHAN\\.gemini\\antigravity\\brain\\b5bb00c6-9227-4dd7-b6f5-09a1b019f6d3\\tcl_nxtpaper_hero_1775796834863.png', 'g:\\Affiliate PRojects\\TechVantage\\public\\blog\\tcl-nxtpaper-hero.webp'),
-    convert('C:\\Users\\BIHAN\\.gemini\\antigravity\\brain\\b5bb00c6-9227-4dd7-b6f5-09a1b019f6d3\\tcl_nxtpaper_sunlight_1775796852050.png', 'g:\\Affiliate PRojects\\TechVantage\\public\\blog\\tcl-nxtpaper-sunlight.webp'),
-    convert('C:\\Users\\BIHAN\\.gemini\\antigravity\\brain\\b5bb00c6-9227-4dd7-b6f5-09a1b019f6d3\\tcl_nxtpaper_switch_1775796867534.png', 'g:\\Affiliate PRojects\\TechVantage\\public\\blog\\tcl-nxtpaper-switch.webp')
+    convert('C:\\Users\\BIHAN\\.gemini\\antigravity\\brain\\fe963500-ee42-4125-b9f8-edc37c21cccc\\ps6_price_hero_1775969086074.png', 'g:\\Affiliate PRojects\\TechVantage\\public\\blog\\ps6-price-hero.webp'),
+    convert('C:\\Users\\BIHAN\\.gemini\\antigravity\\brain\\fe963500-ee42-4125-b9f8-edc37c21cccc\\ps6_price_poll_chart_1775969102749.png', 'g:\\Affiliate PRojects\\TechVantage\\public\\blog\\ps6-price-poll-chart.webp'),
+    convert('C:\\Users\\BIHAN\\.gemini\\antigravity\\brain\\fe963500-ee42-4125-b9f8-edc37c21cccc\\ps6_specs_hardware_1775969116306.png', 'g:\\Affiliate PRojects\\TechVantage\\public\\blog\\ps6-specs-hardware.webp')
 ]).then(() => console.log('All conversions done.'));
