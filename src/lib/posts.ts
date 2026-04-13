@@ -510,4 +510,140 @@ At $199, the TCL NXTPAPER 70 Pro is an absolute steal for anyone prioritizing ey
 `,
     author: 'Bihan Madhusankha',
   },
+  {
+    id: '19',
+    title: 'Microsoft Shuts Down Outlook Lite: What Android Users Need to Know Before May 25',
+    slug: 'microsoft-outlook-lite-shutdown-android-2026',
+    description: 'Microsoft is officially retiring Outlook Lite for Android on May 25, 2026. Is your email at risk? We explore the shutdown, security implications, and how to migrate to Outlook Mobile.',
+    category: 'Software',
+    date: '2026-04-13',
+    image: '/blog/outlook-lite-shutdown-hero.webp',
+    content: `
+<div class="outlook-article-container space-y-8 font-sans">
+
+  <!-- Creative AI View Box -->
+  <div class="quick-answer bg-gradient-to-br from-indigo-900 via-blue-900 to-slate-900 text-white p-8 md:p-10 rounded-3xl shadow-2xl mb-12 relative overflow-hidden border border-blue-500/30">
+    <div class="absolute -top-24 -right-24 md:-top-12 md:-right-12 opacity-10 pointer-events-none">
+      <svg class="w-64 h-64" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+    </div>
+    <div class="relative z-10">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="flex h-3 w-3 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+        </span>
+        <h3 class="text-sm font-bold uppercase tracking-widest text-blue-300">AI Overview: Quick Answer</h3>
+      </div>
+      <p class="text-xl md:text-2xl font-light leading-relaxed mb-4">
+        Microsoft has confirmed that <strong>Outlook Lite</strong>, the lightweight email app for Android, will officially stop working on <strong>May 25, 2026</strong>.
+      </p>
+      <p class="text-blue-100/80 text-base md:text-lg border-l-4 border-blue-500 pl-4">
+        Mailbox access will be disabled, and in-app functionality will cease. Users must migrate to the full <strong>Outlook Mobile</strong> app to maintain access to their emails and calendar.
+      </p>
+    </div>
+  </div>
+
+  <p class="text-xl leading-relaxed text-neutral-700 dark:text-neutral-300">
+    Email security is one of the most critical aspects of digital hygiene in 2026. Microsoft’s decision to sunset Outlook Lite marks the end of an era for low-powered Android devices, but it also signals a shift toward a more secure, consolidated mobile experience.
+  </p>
+
+  <h2 class="text-3xl font-bold mt-16 mb-8 text-neutral-900 dark:text-white flex items-center gap-4">
+    <span class="text-blue-600 dark:text-blue-400">01.</span> The Death Date: May 25, 2026
+  </h2>
+
+  <p class="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300 mb-6">
+    After <strong>May 25, 2026</strong>, Outlook Lite will "officially lose all mailbox access." While the app might still open on your phone, you won't be able to send or receive emails, and navigation will be disabled. 
+  </p>
+
+  <!-- Image 1: Hero Shutdown -->
+  <figure class="my-12 relative rounded-3xl overflow-hidden shadow-2xl group border border-neutral-200 dark:border-neutral-800">
+    <img src="/blog/outlook-lite-shutdown-hero.webp" alt="Microsoft Outlook Lite Shutdown Hero Image" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700 block" />
+    <figcaption class="absolute bottom-0 w-full p-6 text-white text-sm md:text-base font-medium z-20 bg-gradient-to-t from-black/80 to-transparent">
+      The final deadline for Outlook Lite is approaching.
+    </figcaption>
+  </figure>
+
+  <h2 class="text-3xl font-bold mt-16 mb-8 text-neutral-900 dark:text-white flex items-center gap-4">
+    <span class="text-blue-600 dark:text-blue-400">02.</span> Why is Microsoft Killing the Lite App?
+  </h2>
+
+  <p class="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300 mb-6">
+    Microsoft has been on a "culling spree" recently, streamlining its mobile offerings to focus on feature-rich, high-security applications. Outlook Mobile is now the standard for both Android and iOS. By retiring the Lite version, Microsoft ensures that all users benefit from:
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-6 my-10">
+    <div class="p-6 rounded-2xl bg-neutral-100 dark:bg-neutral-900 border-l-4 border-blue-500">
+      <h4 class="font-bold text-lg mb-2 text-neutral-900 dark:text-white">🔒 Enhanced Security</h4>
+      <p class="text-neutral-600 dark:text-neutral-400 text-sm">Unified security protocols across the entire mobile ecosystem, protecting against modern phishing and malware threats.</p>
+    </div>
+    <div class="p-6 rounded-2xl bg-neutral-100 dark:bg-neutral-900 border-l-4 border-indigo-500">
+      <h4 class="font-bold text-lg mb-2 text-neutral-900 dark:text-white">⚡ Feature Parity</h4>
+      <p class="text-neutral-600 dark:text-neutral-400 text-sm">Access to advanced AI Copilot features, better calendar integration, and superior attachment handling not found in the Lite version.</p>
+    </div>
+  </div>
+
+  <!-- Image 2: Upgrade Path -->
+  <figure class="my-10 relative rounded-3xl overflow-hidden shadow-2xl group border border-neutral-200 dark:border-neutral-800">
+    <img src="/blog/outlook-mobile-upgrade-path.webp" alt="Transitioning from Outlook Lite to Outlook Mobile" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700 block" />
+  </figure>
+
+  <h2 class="text-3xl font-bold mt-16 mb-8 text-neutral-900 dark:text-white flex items-center gap-4">
+    <span class="text-blue-600 dark:text-blue-400">03.</span> The Security Implications
+  </h2>
+
+  <p class="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300 mb-6">
+    As we noted in our previous coverage of <a href="/blog/google-quantum-vulnerabilities-cryptocurrency-2026" class="text-blue-600 dark:text-blue-400 underline italic">quantum vulnerabilities</a>, legacy apps are often the weakest link in your security chain. E-mail apps are particularly high-risk because they hold the keys to your entire digital identity. Moving to the main Outlook Mobile app is not just about features—it's about staying protected.
+  </p>
+
+  <!-- Image 3: Security Lockdown -->
+  <figure class="my-10 relative rounded-3xl overflow-hidden shadow-2xl group border border-neutral-200 dark:border-neutral-800">
+    <img src="/blog/outlook-security-lockdown.webp" alt="Mobile Email Security Concept" class="w-full h-auto object-cover transform hover:scale-110 transition-transform duration-1000 origin-center block" />
+  </figure>
+
+  <h2 class="text-3xl font-bold mt-16 mb-8 text-neutral-900 dark:text-white flex items-center gap-4">
+    <span class="text-blue-600 dark:text-blue-400">04.</span> What You Should Do Now
+  </h2>
+
+  <p class="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300 mb-6">
+    If you are still using Outlook Lite, the transition is straightforward. Microsoft confirms that individual accounts will not be deleted.
+  </p>
+
+  <div class="bg-neutral-900 text-white rounded-3xl p-8 mb-12 shadow-[0_0_40px_-10px_rgba(59,130,246,0.3)] border border-neutral-800 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 pointer-events-none"></div>
+    <ul class="space-y-4 relative z-10 text-sm md:text-base">
+      <li class="flex items-center gap-4 p-4 bg-neutral-800/50 rounded-xl"><span class="text-blue-400 font-bold">Step 1:</span> <span>Open Outlook Lite and tap the 'Upgrade' option (if available) or search for 'Microsoft Outlook' in the Play Store.</span></li>
+      <li class="flex items-center gap-4 p-4 bg-neutral-800/50 rounded-xl"><span class="text-blue-400 font-bold">Step 2:</span> <span>Install the official Outlook Mobile app and sign in with your existing credentials.</span></li>
+      <li class="flex items-center gap-4 p-4 bg-neutral-800/50 rounded-xl"><span class="text-blue-400 font-bold">Step 3:</span> <span>Verify that your emails, calendar, and contacts have synced correctly.</span></li>
+    </ul>
+  </div>
+
+  <h2 class="text-3xl font-bold mt-16 mb-8 text-neutral-900 dark:text-white flex items-center gap-4">
+    <span class="text-blue-600 dark:text-blue-400">05.</span> FAQ: Outlook Lite Retirement
+  </h2>
+
+  <div class="space-y-6">
+    <div class="p-6 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-sm">
+      <h4 class="font-bold text-lg mb-2 text-neutral-900 dark:text-white">Q: Will my emails be deleted?</h4>
+      <p class="text-neutral-600 dark:text-neutral-400 text-sm">No. Your account remains intact. All history will be available when you sign in to the standard Outlook Mobile app.</p>
+    </div>
+    <div class="p-6 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-sm">
+      <h4 class="font-bold text-lg mb-2 text-neutral-900 dark:text-white">Q: Is Outlook Mobile free?</h4>
+      <p class="text-neutral-600 dark:text-neutral-400 text-sm">Yes, Outlook Mobile remains free for personal use with basic features, similar to the Lite version.</p>
+    </div>
+    <div class="p-6 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-sm">
+      <h4 class="font-bold text-lg mb-2 text-neutral-900 dark:text-white">Q: Why was there no Outlook Lite for iOS?</h4>
+      <p class="text-neutral-600 dark:text-neutral-400 text-sm">The Likte app was specifically designed for lower-powered Android hardware in emerging markets. iOS devices generally met the requirements for the full version from the start.</p>
+    </div>
+  </div>
+
+  <div class="mt-12 p-8 rounded-3xl bg-blue-50 dark:bg-blue-900/10 border border-blue-200 dark:border-blue-800">
+    <p class="text-lg font-medium text-blue-900 dark:text-blue-100">
+      Need more tech news? Check out our latest breakdown of <a href="/blog/meta-muse-spark-ai-model-2026" class="underline hover:text-blue-700">Meta’s Muse Spark AI</a> or learn <a href="/blog/setup-run-local-llms-windows-2026-npu-gpu" class="underline hover:text-blue-700">how to run local LLMs</a> on your modern hardware.
+    </p>
+  </div>
+
+</div>
+`,
+    author: 'Bihan Madhusankha',
+  },
 ];
