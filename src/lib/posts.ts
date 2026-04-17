@@ -14,8 +14,8 @@ export const POSTS: Post[] = [
   {
     id: '21',
     title: 'Claude Opus 4.7: The New Standard for Agentic AI Reasoning and Advanced Software Engineering',
-    slug: 'claude-opus-4-7-advanced-reasoning-release-2026',
-    description: 'Anthropic has released Claude Opus 4.7, featuring huge gains in advanced software engineering, high-res vision, instruction following, and memory. We compare it to Opus 4.6 and Gemini 3.1 Pro.',
+    slug: 'anthropic-claude-opus-4-7-release-guide',
+    description: 'Unlocking Claude Opus 4.7: Anthropic\'s latest model brings state-of-the-art software engineering, 3.75MP high-res vision, and autonomous agentic capabilities. Explore /ultrareview, xhigh effort, and pricing.',
     category: 'AI',
     date: '2026-04-17',
     image: '/blog/claude-opus-4-7-hero.webp',
