@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '22',
+    title: 'Introducing Claude Design by Anthropic Labs: Visual Prototyping Supercharged',
+    slug: 'claude-design-anthropic-labs-launch',
+    description: 'Anthropic Labs launches Claude Design. Powered by Claude Opus 4.7, it helps teams generate, refine, and deploy polished designs, prototypes, and slide decks.',
+    category: 'AI',
+    date: '2026-04-19',
+    image: '/blog/claude-design-interface.webp',
+    content: 'Full analysis of Claude Design features, Claude Code handoff, and Opus 4.7 integrations...',
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '21',
     title: 'Claude Opus 4.7: The New Standard for Agentic AI Reasoning and Advanced Software Engineering',
     slug: 'anthropic-claude-opus-4-7-release-guide',
