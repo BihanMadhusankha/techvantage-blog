@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { constructMetadata, generateBlogPostSchema, generateFAQSchema } from "@/lib/seo";
+import { POSTS } from '@/lib/posts';
 
 export const metadata = constructMetadata({
   title: "Claude Design by Anthropic Labs: The New Era of AI Visual Collaboration",
@@ -44,6 +45,8 @@ export default function ClaudeDesignLaunchPage() {
     image: "https://techvantage.blog/blog/claude-design-interface.webp",
     author: "Bihan Madhusankha",
   });
+
+  const relatedPosts = POSTS.filter(post => post.category === 'AI' && post.slug !== 'claude-design-anthropic-labs-launch').slice(0, 3);
 
   return (
     <article className="container mx-auto px-4 py-12 md:px-6 lg:px-8 max-w-4xl">
@@ -192,6 +195,36 @@ export default function ClaudeDesignLaunchPage() {
           ))}
         </div>
       </div>
+
+      {/* Related Posts */}
+      {relatedPosts.length > 0 && (
+        <div className="mt-20 pt-16 border-t border-neutral-200 dark:border-neutral-800">
+          <h2 className="text-2xl font-bold mb-8 text-neutral-900 dark:text-neutral-50 uppercase tracking-wider">Related AI News</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {relatedPosts.map(post => (
+              <Link key={post.id} href={`/blog/${post.slug}`} className="group block h-full flex flex-col bg-white dark:bg-neutral-900 rounded-3xl overflow-hidden border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-xl transition-all duration-300 hover:border-indigo-300 dark:hover:border-indigo-700">
+                <div className="relative aspect-video w-full overflow-hidden">
+                  <Image
+                    src={post.image.startsWith('/') ? post.image : `${post.image.split('?')[0]}?auto=format&fit=crop&q=65&w=600`}
+                    alt={post.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6 flex flex-col flex-grow">
+                  <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest mb-2">{post.category}</span>
+                  <h3 className="text-xl font-bold mb-3 text-neutral-900 dark:text-neutral-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-2">{post.title}</h3>
+                  <p className="text-neutral-600 dark:text-neutral-400 text-sm line-clamp-3 mb-4 flex-grow">{post.description}</p>
+                  <div className="text-xs text-neutral-500 font-medium">
+                    {post.date}
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </article>
   );
 }
