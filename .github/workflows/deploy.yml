@@ -3,7 +3,11 @@ name: Deploy TechVantage to Hostinger
 on:
   push:
     branches:
-      - main  # උඹේ main branch එකට push කරද්දී වැඩේ වෙන්නේ
+      - main
+
+# Node.js 20 Deprecation warning එක අයින් කරන්න මේක දාන්න
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build-and-deploy:
@@ -13,13 +17,19 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # මෙතන 20 තිබුණට env එක නිසා run වෙන්නේ 24න්
+          cache: 'npm'
+
       - name: Install Dependencies
         run: npm install
 
       - name: Build Project
-        run: npm run build # Next.js/Astro static build එක ගන්නවා
+        run: npm run build 
 
-      - name: Deploy via FTP
+      - name: Deploy via SFTP (Secure & Faster)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -27,5 +37,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./out/
           server-dir: /public_html/
-          protocol: ftp
-          port: 21
+          protocol: sftp # FTP වෙනුවට SFTP පාවිච්චි කරමු
+          port: 22 # SFTP port එක 22
+          timeout: 90000 # Timeout එක තත්පර 90ක් දක්වා වැඩි කළා (ලොකු ෆයිල් වලට හොඳයි)
+          dangerous-clean-slate: false # සර්වර් එකේ තියෙන පරණ ෆයිල් මකන්නේ නැති වෙන්න
