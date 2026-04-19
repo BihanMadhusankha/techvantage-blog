@@ -5,7 +5,6 @@ on:
     branches:
       - main
 
-# Node.js 20 Deprecation warning එක අයින් කරන්න මේක දාන්න
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -20,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # මෙතන 20 තිබුණට env එක නිසා run වෙන්නේ 24න්
+          node-version: '20'
           cache: 'npm'
 
       - name: Install Dependencies
@@ -29,7 +28,7 @@ jobs:
       - name: Build Project
         run: npm run build 
 
-      - name: Deploy via SFTP (Secure & Faster)
+      - name: Deploy via FTPS (Secure FTP)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -37,7 +36,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./out/
           server-dir: /public_html/
-          protocol: sftp # FTP වෙනුවට SFTP පාවිච්චි කරමු
-          port: 22 # SFTP port එක 22
-          timeout: 90000 # Timeout එක තත්පර 90ක් දක්වා වැඩි කළා (ලොකු ෆයිල් වලට හොඳයි)
-          dangerous-clean-slate: false # සර්වර් එකේ තියෙන පරණ ෆයිල් මකන්නේ නැති වෙන්න
+          protocol: ftps # මෙතන "ftps" කියලා විතරක් දාන්න
+          port: 21 # FTPS වලට සාමාන්‍යයෙන් 21 පාවිච්චි වෙන්නේ (Explicit TLS)
+          timeout: 90000
