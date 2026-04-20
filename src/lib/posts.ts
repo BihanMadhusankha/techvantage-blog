@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '23',
+    title: 'I Found a Gemini Feature So Good, I Deleted a Bunch of Apps',
+    slug: 'gemini-extensions-app-replacements',
+    description: 'How Google Gemini Extensions evolved from simple party tricks to a powerful centralized hub that completely replaced standalone productivity and travel apps on my phone.',
+    category: 'AI',
+    date: '2026-04-20',
+    image: '/blog/gemini-extensions-hero.webp',
+    content: 'Full analysis of Gemini Workspace and Google app integrations...',
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '22',
     title: 'Introducing Claude Design by Anthropic Labs: Visual Prototyping Supercharged',
     slug: 'claude-design-anthropic-labs-launch',
