@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '24',
+    title: 'Anthropic & Amazon Announce Massive 5 Gigawatt Compute Expansion',
+    slug: 'anthropic-amazon-compute-5gw',
+    description: 'Anthropic signs a multi-year deal committing over $100 billion to secure up to 5GW of Amazon Trainium2 and Trainium3 capacity for Claude AI deployment.',
+    category: 'AI',
+    date: '2026-04-21',
+    image: '/blog/anthropic-amazon-hero.webp',
+    content: 'Full analysis of the Anthropic and Amazon 5GW global infrastructure expansion...',
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '23',
     title: 'I Found a Gemini Feature So Good, I Deleted a Bunch of Apps',
     slug: 'gemini-extensions-app-replacements',
