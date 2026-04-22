@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '25',
+    title: 'Mozilla: Anthropic’s Mythos Found 271 Security Vulnerabilities in Firefox 150',
+    slug: 'mozilla-mythos-firefox-150-vulnerabilities',
+    description: 'Mozilla reveals that early access to Anthropic\'s Mythos Preview model helped pre-identify 271 security vulnerabilities in the Firefox 150 release.',
+    category: 'Software',
+    date: '2026-04-22',
+    image: '/blog/mozilla-mythos-firefox-150-vulnerabilities/mythos-firefox-security-1.webp',
+    content: 'Full analysis of Mozilla using Anthropic Mythos to find 271 vulnerabilities in Firefox 150...',
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '24',
     title: 'Anthropic & Amazon Announce Massive 5 Gigawatt Compute Expansion',
     slug: 'anthropic-amazon-compute-5gw',
