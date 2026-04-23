@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '26',
+    title: 'OpenAI Unveils ChatGPT Images 2 & Scales Codex Labs for Enterprise',
+    slug: 'openai-chatgpt-images-2-codex-labs',
+    description: 'OpenAI launches ChatGPT Images 2 with magazine-grade design capabilities and introduces Codex Labs to accelerate enterprise adoption.',
+    category: 'AI',
+    date: '2026-04-23',
+    image: '/blog/openai-chatgpt-images-2-codex-labs/chatgpt-images-2-hero.webp',
+    content: 'Full analysis of OpenAI ChatGPT Images 2 and Codex Labs enterprise capabilities...',
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '25',
     title: 'Mozilla: Anthropic’s Mythos Found 271 Security Vulnerabilities in Firefox 150',
     slug: 'mozilla-mythos-firefox-150-vulnerabilities',
