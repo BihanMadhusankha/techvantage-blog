@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '27',
+    title: 'Meta to Cut 10% of Workforce in Massive A.I. Pivot',
+    slug: 'meta-ai-layoffs-10-percent-2026',
+    description: 'Meta announces layoffs affecting 8,000 employees and closes 6,000 open roles as the tech giant heavily invests in artificial intelligence and automation.',
+    category: 'AI',
+    date: '2026-04-24',
+    image: '/blog/meta-ai-layoffs-10-percent-2026/meta_ai_layoffs_1.webp',
+    content: 'Full analysis of Meta AI layoffs affecting 8000 employees...',
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '26',
     title: 'OpenAI Unveils ChatGPT Images 2 & Scales Codex Labs for Enterprise',
     slug: 'openai-chatgpt-images-2-codex-labs',
