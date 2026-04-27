@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '28',
+    title: 'iOS 26.4.1 Update Automatically Enables Stolen Device Protection',
+    slug: 'apple-ios-26-4-1-stolen-device-protection',
+    description: 'Apple\'s latest iOS 26.4.1 update goes beyond minor bug fixes by automatically enabling Stolen Device Protection on compatible iPhones. Here is what you need to know to secure your device.',
+    category: 'Software',
+    date: '2026-04-27',
+    image: '/blog/apple-ios-26-4-1-stolen-device-protection/ios_26_4_1_security_1.webp',
+    content: 'Full analysis of Apple iOS 26.4.1 security update and Stolen Device Protection...',
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '27',
     title: 'Meta to Cut 10% of Workforce in Massive A.I. Pivot',
     slug: 'meta-ai-layoffs-10-percent-2026',
