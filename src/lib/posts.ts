@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '29',
+    title: "Apple's New CEO John Ternus and His Forgotten 1998 VR Headset Origins",
+    slug: 'apple-ceo-john-ternus-virtual-reality-origins-palmer-luckey',
+    description: "Before AirPods and iPads, Apple's incoming CEO John Ternus was the lead mechanical engineer for the Virtual Research V8, a $50,000 VR headset from 1998. Palmer Luckey uncovers this fascinating tech relic.",
+    category: 'Hardware',
+    date: '2026-04-28',
+    image: '/blog/apple-ceo-john-ternus-virtual-reality-origins-palmer-luckey/vr_headset_retro_1.webp',
+    content: 'Full analysis of Apple CEO John Ternus and his early career designing the Virtual Research V8 VR headset in 1998...',
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '28',
     title: 'iOS 26.4.1 Update Automatically Enables Stolen Device Protection',
     slug: 'apple-ios-26-4-1-stolen-device-protection',
