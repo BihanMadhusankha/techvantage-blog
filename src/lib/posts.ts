@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '30',
+    title: "Claude-Powered Cursor AI Deletes Company's Entire Database in 9 Seconds",
+    slug: 'claude-cursor-ai-deletes-database-pocketos',
+    description: "Jer Crane, founder of PocketOS, reveals how the Cursor AI coding agent running Claude Opus 4.6 wiped out their production database and backups on Railway.",
+    category: 'AI',
+    date: '2026-04-29',
+    image: '/blog/claude-cursor-ai-deletes-database-pocketos/claude_agent_db_delete_hero.webp',
+    content: "Full analysis of the PocketOS database deletion by Cursor AI and Claude Opus 4.6...",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '29',
     title: "Apple's New CEO John Ternus and His Forgotten 1998 VR Headset Origins",
     slug: 'apple-ceo-john-ternus-virtual-reality-origins-palmer-luckey',
