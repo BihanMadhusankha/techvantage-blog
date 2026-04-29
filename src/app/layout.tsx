@@ -39,6 +39,18 @@ export default function RootLayout({
             gtag('config', 'G-THT96WD1M5');
           `}
         </Script>
+        {/* Multilingual Support */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Sans+Sinhala:wght@400;700&family=Noto+Sans+Tamil:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet" />
+        <Script id="google-translate-init" strategy="lazyOnload">
+          {`
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element');
+            }
+          `}
+        </Script>
+        <Script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" strategy="lazyOnload" />
       </head>
       <body
         suppressHydrationWarning

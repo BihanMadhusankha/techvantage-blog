@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { LanguageSwitcher } from '@/components/layout/LanguageSwitcher';
 
 const NAV_LINKS = [
   { name: 'Software', href: '/category/software' },
@@ -32,6 +33,7 @@ export function Navbar() {
             </nav>
           </div>
           <div className="flex items-center gap-4">
+            <LanguageSwitcher />
             <ThemeToggle />
           </div>
         </div>
