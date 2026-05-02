@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '31',
+    title: "Google's Secret 'COSMO' AI Assistant Briefly Leaks on the Play Store",
+    slug: 'google-cosmo-ai-assistant-app',
+    description: "An in-depth look at Google COSMO, the experimental Gemini Nano-powered AI assistant that accidentally went live on the Play Store, revealing advanced on-device capabilities like deep research and browser automation.",
+    category: 'AI',
+    date: '2026-05-02',
+    image: '/blog/google-cosmo-ai-assistant-app/cosmo_app_hero.webp',
+    content: "Full analysis of Google's experimental COSMO AI assistant...",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '30',
     title: "Claude-Powered Cursor AI Deletes Company's Entire Database in 9 Seconds",
     slug: 'claude-cursor-ai-deletes-database-pocketos',
