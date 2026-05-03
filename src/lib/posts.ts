@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '32',
+    title: "How to Get the Super Rocket Radar to Face Giovanni in Pokémon GO",
+    slug: 'pokemon-go-super-rocket-radar-giovanni',
+    description: "Learn the new and only way to obtain the Super Rocket Radar and face Team GO Rocket Boss Giovanni in Pokémon GO. Complete the Steeled Resolve GO Pass before the deadline.",
+    category: 'Software',
+    date: '2026-05-03',
+    image: '/blog/pokemon-go-super-rocket-radar-giovanni/giovanni_showdown.webp',
+    content: "Full analysis of the Steeled Resolve GO Pass to get the Super Rocket Radar in Pokemon GO...",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '31',
     title: "Google's Secret 'COSMO' AI Assistant Briefly Leaks on the Play Store",
     slug: 'google-cosmo-ai-assistant-app',
