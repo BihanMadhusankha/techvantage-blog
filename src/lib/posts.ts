@@ -12,6 +12,28 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '34',
+    title: "Nintendo Apologizes as Switch 2 Price Increase Announced",
+    slug: 'nintendo-switch-2-price-increase',
+    description: "The price of Nintendo's Switch 2 will increase globally from September, the company has announced, citing AI-driven component shortages and global economic pressures.",
+    category: 'Hardware',
+    date: '2026-05-08',
+    image: '/blog/nintendo-switch-2-price-increase/nintendo_switch_2_hero.webp',
+    content: "Full analysis of the Nintendo Switch 2 price increase, RAM shortages, and global economic factors...",
+    author: 'Bihan Madhusankha',
+  },
+  {
+    id: '33',
+    title: "How Dangerous Is Anthropic's Mythos AI? The Future of Hacking",
+    slug: 'anthropic-mythos-ai-hacking',
+    description: "Anthropic's new Mythos Preview model showcases terrifying capabilities in automated software vulnerability scanning. We explore the profound implications for cybersecurity, tax loopholes, and regulatory hacking.",
+    category: 'Software',
+    date: '2026-05-08',
+    image: '/blog/anthropic-mythos-ai-hacking/anthropic_mythos_ai.webp',
+    content: "Full analysis of the Anthropic Mythos Preview model and its implications for cybersecurity and the US tax code...",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '32',
     title: "How to Get the Super Rocket Radar to Face Giovanni in Pokémon GO",
     slug: 'pokemon-go-super-rocket-radar-giovanni',
