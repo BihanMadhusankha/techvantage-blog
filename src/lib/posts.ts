@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '35',
+    title: "iPhone 18 Pro to Feature 'Aggressive' Pricing Despite RAM Crisis",
+    slug: 'iphone-18-pro-pricing-features',
+    description: "Apple's upcoming iPhone 18 Pro is rumored to maintain aggressive starting prices despite global RAM shortages. Discover the leaked features, 2nm A20 chip, and new Dark Cherry color.",
+    category: 'Hardware',
+    date: '2026-05-17',
+    image: '/blog/iphone-18-pro-pricing-features/iphone_18_hero.webp',
+    content: "Full analysis of the iPhone 18 Pro leaked pricing, 2nm A20 Pro chip, smaller dynamic island, and new colors...",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '34',
     title: "Nintendo Apologizes as Switch 2 Price Increase Announced",
     slug: 'nintendo-switch-2-price-increase',
