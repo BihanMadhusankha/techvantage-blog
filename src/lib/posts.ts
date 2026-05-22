@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '36',
+    title: "Grok Falls Flat in Washington: Undercutting SpaceX's $1.75T AI Valuation Story",
+    slug: 'spacex-xai-grok-us-government-adoption-analysis',
+    description: "Exclusive federal data reveals Elon Musk's xAI Grok chatbot has failed to capture U.S. government interest, challenging the massive AI growth projections that anchor SpaceX's record-breaking IPO valuation.",
+    category: 'AI',
+    date: '2026-05-22',
+    image: '/blog/spacex-xai-grok-us-government-adoption-analysis/grok_government_fail_hero.webp',
+    content: "Full analysis of Elon Musk's Grok AI Washington adoption failure, comparing OpenAI, Anthropic, and Google Gemini public sector use cases, corporate America tracking datasets from Netskope, and the critical implications for SpaceX's IPO valuation...",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '35',
     title: "iPhone 18 Pro to Feature 'Aggressive' Pricing Despite RAM Crisis",
     slug: 'iphone-18-pro-pricing-features',
