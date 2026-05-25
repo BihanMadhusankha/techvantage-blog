@@ -4,7 +4,8 @@ import { Providers } from "@/components/Providers";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { constructMetadata } from "@/lib/seo";
-import Script from "next/script"; // 1. මෙන්න මේක අලුතෙන් ඇඩ් කළා
+import { GoogleFonts } from "@/components/layout/GoogleFonts";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,24 +47,8 @@ export default function RootLayout({
             gtag('config', 'G-THT96WD1M5');
           `}
         </Script>
-        {/* Non-render-blocking font load: preconnect + print media trick */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* Load fonts with media=print then swap to all — prevents render blocking */}
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Sans+Sinhala:wght@400;700&family=Noto+Sans+Tamil:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap"
-          media="print"
-          // @ts-expect-error: onload is valid for link tags
-          onLoad="this.media='all'"
-        />
-        {/* Noscript fallback for fonts */}
-        <noscript>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Sans+Sinhala:wght@400;700&family=Noto+Sans+Tamil:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap"
-          />
-        </noscript>
+        {/* Non-render-blocking font load via client component */}
+        <GoogleFonts />
         {/* Google Translate — fully deferred, loads after page is interactive */}
         <Script id="google-translate-init" strategy="lazyOnload">
           {`
