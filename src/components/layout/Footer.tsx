@@ -11,7 +11,7 @@ export function Footer() {
             <Link href="/" className="text-xl font-bold tracking-tighter mb-4 inline-block">
               TECH<span className="text-blue-600">VANTAGE</span>
             </Link>
-            <p className="text-sm text-neutral-500 max-w-xs">
+            <p className="text-sm text-neutral-600 dark:text-neutral-400 max-w-xs">
               Navigating the future of technology with in-depth guides,
               expert insights, and the latest trends for 2026 and beyond.
             </p>
@@ -33,7 +33,7 @@ export function Footer() {
           {/* Categories column */}
           <div>
             <h3 className="font-semibold mb-4">Categories</h3>
-            <ul className="space-y-2 text-sm text-neutral-500">
+            <ul className="space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
               <li><Link href="/category/software" className="hover:text-blue-600">Software</Link></li>
               <li><Link href="/category/hardware" className="hover:text-blue-600">Hardware</Link></li>
               <li><Link href="/category/ai" className="hover:text-blue-600">Artificial Intelligence</Link></li>
@@ -44,7 +44,7 @@ export function Footer() {
           {/* Support column */}
           <div>
             <h3 className="font-semibold mb-4">Support</h3>
-            <ul className="space-y-2 text-sm text-neutral-500">
+            <ul className="space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
               <li><Link href="/about" className="hover:text-blue-600">About Us</Link></li>
               <li><Link href="/contact" className="hover:text-blue-600">Contact</Link></li>
               <li><Link href="/privacy" className="hover:text-blue-600">Privacy Policy</Link></li>
@@ -53,7 +53,7 @@ export function Footer() {
           </div>
 
         </div>
-        <div className="border-t mt-12 pt-8 text-center text-xs text-neutral-500">
+        <div className="border-t mt-12 pt-8 text-center text-xs text-neutral-600 dark:text-neutral-400">
           <p>© {new Date().getFullYear()} TechVantage Blog. Optimized for 2026 Tech Trends.</p>
         </div>
       </div>

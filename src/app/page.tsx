@@ -35,34 +35,35 @@ export default function HomePage() {
             </h2>
 
             <div suppressHydrationWarning className="grid gap-12">
-              {latestPosts.map((post, index) => ( // 2. මෙතන 'index' එක ගත්තා
+              {latestPosts.map((post, index) => (
                 <article suppressHydrationWarning key={post.id} className="grid grid-cols-1 md:grid-cols-5 gap-6 group">
                   <div suppressHydrationWarning className="md:col-span-2 relative aspect-[16/10] overflow-hidden rounded-lg bg-neutral-100">
                     <Image
-                      // 3. Image quality එක 75 සිට 65 දක්වා අඩු කරා (Mobile speed වලට පට්ටම වැදගත්)
-                      src={post.image.startsWith('/') ? post.image : `${post.image.split('?')[0]}?auto=format&fit=crop&q=65&w=800`}
+                      src={post.image.startsWith('/') ? post.image : `${post.image.split('?')[0]}?auto=format&fit=crop&q=75&w=800`}
                       alt={post.title}
                       fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 40vw, 320px"
+                      priority={index === 0}
+                      loading={index === 0 ? undefined : 'lazy'}
+                      className="object-cover transition-transform duration-500 group-hover:scale-105 will-change-transform"
                     />
                   </div>
                   <div suppressHydrationWarning className="md:col-span-3 flex flex-col justify-center">
-                    <span className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">
+                    <span className="text-xs font-bold text-blue-700 dark:text-blue-400 uppercase tracking-widest mb-2">
                       {post.category}
                     </span>
                     <Link href={`/blog/${post.slug}`}>
-                      <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-600 transition-colors leading-tight">
+                      <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-600 transition-colors leading-tight text-neutral-900 dark:text-white">
                         {post.title}
                       </h3>
                     </Link>
-                    <p className="text-neutral-600 dark:text-neutral-300 text-sm line-clamp-2 mb-4">
+                    <p className="text-neutral-700 dark:text-neutral-300 text-sm line-clamp-2 mb-4">
                       {post.description}
                     </p>
-                    <div className="flex items-center text-xs text-neutral-500">
-                      <span className="font-semibold text-neutral-700 dark:text-neutral-200">{post.author}</span>
-                      <span className="mx-2">•</span>
-                      <span>{post.date}</span>
+                    <div className="flex items-center text-xs text-neutral-600 dark:text-neutral-400">
+                      <span className="font-semibold text-neutral-800 dark:text-neutral-200">{post.author}</span>
+                      <span className="mx-2" aria-hidden="true">•</span>
+                      <time dateTime={post.date}>{post.date}</time>
                     </div>
                   </div>
                 </article>

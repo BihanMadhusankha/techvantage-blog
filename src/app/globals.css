@@ -10,7 +10,7 @@
   --secondary: #f4f4f5;
   --secondary-foreground: #18181b;
   --muted: #f4f4f5;
-  --muted-foreground: #71717a;
+  --muted-foreground: #52525b; /* Upgraded from #71717a — passes WCAG AA 4.5:1 on white */
   --accent: #f4f4f5;
   --accent-foreground: #18181b;
   --border: #e4e4e7;
@@ -63,6 +63,19 @@ body {
   top: 0 !important; /* Prevent Google Translate from shifting body down */
 }
 
+/* Screen reader only utility — ensures sr-only is always available */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 /* Hide Google Translate Toolbar and Tooltips */
 .skiptranslate > iframe.skiptranslate {
   display: none !important;
@@ -80,3 +93,4 @@ font {
   background-color: transparent !important;
   box-shadow: none !important;
 }
+

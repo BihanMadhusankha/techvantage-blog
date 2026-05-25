@@ -26,16 +26,19 @@ export function Sidebar() {
 
       <div className="bg-blue-50 dark:bg-blue-900/10 p-6 rounded-lg border border-blue-100 dark:border-blue-900/30">
         <h3 className="font-bold mb-2">Weekly Tech Insights</h3>
-        <p className="text-sm text-neutral-700 dark:text-neutral-300 mb-4">
+        <p className="text-sm text-neutral-800 dark:text-neutral-200 mb-4">
           Join 50,000+ tech professionals getting the edge on 2026 trends.
         </p>
         <form className="space-y-2">
-          <input 
-            type="email" 
-            placeholder="Work Email" 
-            className="w-full px-3 py-2 rounded border border-neutral-200 dark:border-neutral-800 bg-background text-sm focus:outline-none focus:ring-2 focus:ring-blue-600"
+          <label htmlFor="newsletter-email" className="sr-only">Work email address</label>
+          <input
+            id="newsletter-email"
+            type="email"
+            placeholder="Work Email"
+            autoComplete="email"
+            className="w-full px-3 py-2 rounded border border-neutral-200 dark:border-neutral-800 bg-background text-sm text-neutral-900 dark:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
-          <button className="w-full bg-blue-600 text-white text-sm font-bold py-2 rounded hover:bg-blue-700 transition-colors">
+          <button type="submit" className="w-full bg-blue-600 text-white text-sm font-bold py-2 rounded hover:bg-blue-700 transition-colors">
             Subscribe
           </button>
         </form>

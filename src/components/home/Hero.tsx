@@ -4,10 +4,10 @@ import Image from 'next/image';
 export function Hero() {
   return (
     <section className="relative w-full py-16 md:py-24 lg:py-32 bg-white dark:bg-[#0a0a0a] overflow-hidden border-b border-neutral-100 dark:border-neutral-900">
-      {/* Abstract Background Gradients */}
-      <div className="absolute top-0 inset-x-0 h-[500px] pointer-events-none overflow-hidden">
-        <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[80%] rounded-full bg-blue-500/10 dark:bg-blue-600/10 blur-[100px]" />
-        <div className="absolute top-[20%] -right-[10%] w-[40%] h-[60%] rounded-full bg-purple-500/10 dark:bg-purple-600/10 blur-[100px]" />
+      {/* Abstract Background Gradients — using transform:translate3d for GPU compositing */}
+      <div className="absolute top-0 inset-x-0 h-[500px] pointer-events-none overflow-hidden" aria-hidden="true">
+        <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[80%] rounded-full bg-blue-500/10 dark:bg-blue-600/10 blur-[80px] will-change-[opacity]" />
+        <div className="absolute top-[20%] -right-[10%] w-[40%] h-[60%] rounded-full bg-purple-500/10 dark:bg-purple-600/10 blur-[80px] will-change-[opacity]" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -16,8 +16,8 @@ export function Hero() {
           <div className="flex flex-col justify-center space-y-8">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 rounded-full bg-neutral-100 dark:bg-neutral-900 px-4 py-1.5 text-sm font-semibold text-neutral-800 dark:text-neutral-200 border border-neutral-200 dark:border-neutral-800 shadow-sm">
-                <span className="relative flex h-2.5 w-2.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
+                <span className="relative flex h-2.5 w-2.5" aria-hidden="true">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75 will-change-transform"></span>
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-600"></span>
                 </span>
                 TechVantage 2026 Edition
@@ -71,12 +71,13 @@ export function Hero() {
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 z-10 pointer-events-none mix-blend-overlay"></div>
               <Image
                 src="/hero/tech_hero_banner.webp"
-                alt="Abstract future tech visualization"
+                alt="Abstract visualization of future technology trends including AI and software engineering"
                 fill
                 priority
                 fetchPriority="high"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                decoding="sync"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
+                className="object-cover transition-transform duration-1000 group-hover:scale-105 will-change-transform"
               />
               {/* Floating aesthetic card */}
               <div className="absolute bottom-6 left-6 right-6 z-20 rounded-2xl bg-white/80 dark:bg-black/80 backdrop-blur-md border border-white/20 dark:border-neutral-800/50 p-5 shadow-xl transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 hidden md:block">

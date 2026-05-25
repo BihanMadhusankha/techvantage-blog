@@ -26,7 +26,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* 2. Google Analytics Scripts මෙතනට ඇඩ් කළා */}
+        {/* Preload LCP hero image — critical for mobile performance */}
+        <link
+          rel="preload"
+          as="image"
+          href="/hero/tech_hero_banner.webp"
+          type="image/webp"
+        />
+        {/* Google Analytics — deferred, non-blocking */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-THT96WD1M5"
           strategy="lazyOnload"
@@ -39,10 +46,25 @@ export default function RootLayout({
             gtag('config', 'G-THT96WD1M5');
           `}
         </Script>
-        {/* Multilingual Support */}
+        {/* Non-render-blocking font load: preconnect + print media trick */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Sans+Sinhala:wght@400;700&family=Noto+Sans+Tamil:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet" />
+        {/* Load fonts with media=print then swap to all — prevents render blocking */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Sans+Sinhala:wght@400;700&family=Noto+Sans+Tamil:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap"
+          media="print"
+          // @ts-expect-error: onload is valid for link tags
+          onLoad="this.media='all'"
+        />
+        {/* Noscript fallback for fonts */}
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Sans+Sinhala:wght@400;700&family=Noto+Sans+Tamil:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap"
+          />
+        </noscript>
+        {/* Google Translate — fully deferred, loads after page is interactive */}
         <Script id="google-translate-init" strategy="lazyOnload">
           {`
             function googleTranslateElementInit() {
