@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '37',
+    title: "Sundar Pichai Says Graduates Booing AI Will Shape Its Future — And Live With the Consequences",
+    slug: 'sundar-pichai-ai-graduates-stanford-2026',
+    description: "Google CEO Sundar Pichai prepares for Stanford's 2026 commencement amid a wave of graduates booing tech executives over AI. A fact-checked deep-dive into real data, Pew Research findings, and what Pichai actually said on Hard Fork.",
+    category: 'AI',
+    date: '2026-05-25',
+    image: '/blog/sundar-pichai-ai-graduates-stanford-2026/sundar_pichai_graduates_hero.webp',
+    content: "Full fact-checked analysis of Sundar Pichai's Stanford commencement, graduate anxiety over AI job displacement, and what the booing of tech CEOs reveals about public sentiment toward artificial intelligence...",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '36',
     title: "Grok Falls Flat in Washington: Undercutting SpaceX's $1.75T AI Valuation Story",
     slug: 'spacex-xai-grok-us-government-adoption-analysis',
