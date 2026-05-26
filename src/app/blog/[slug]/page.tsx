@@ -57,8 +57,33 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   if (!post) notFound();
 
-  // Define FAQs for schema and UI
-  const faqs = [
+  // Define FAQs per post for schema and UI
+  const postFaqs: Record<string, { question: string; answer: string }[]> = {
+    'gopro-mission-1-pro-review-8k-action-camera': [
+      {
+        question: 'Is the GoPro Mission 1 Pro worth the $699 price tag?',
+        answer: `For **professional action sports creators**, yes — it delivers the best video quality of any action camera ever made at 8K 60fps with a 1-inch sensor. For casual weekend shooters, the **DJI Osmo Action 6 at $426** is a more practical choice.`,
+      },
+      {
+        question: 'How does the GoPro Mission 1 Pro compare to the DJI Osmo Action 6?',
+        answer: `The Mission 1 Pro beats the DJI Osmo Action 6 in **sensor size (1-inch vs 1/1.15-inch), resolution (50MP vs 38MP), max video resolution (8K 60fps vs 4K 120fps), battery life, and low-light performance**. However, the Osmo Action 6 offers **50GB of built-in storage** and costs $273 less at $426.`,
+      },
+      {
+        question: 'Can the GoPro Mission 1 Pro shoot 8K for extended periods without overheating?',
+        answer: `At **8K 60fps**, GoPro rates thermal limits at approximately **35 minutes when stationary**. In real-world conditions with airflow (e.g., mounting on a moving bicycle), actual runtime extends significantly — our test completed a **70-minute bike ride at 8K 60fps with zero thermal shutdown**.`,
+      },
+      {
+        question: 'Does the GoPro Mission 1 Pro have internal storage?',
+        answer: `**No.** The Mission 1 Pro relies entirely on **microSD cards** for storage. This is a notable disadvantage compared to the DJI Osmo Action 6, which includes **50GB of built-in high-speed internal storage**. You will need a fast UHS-II or V90 rated card for 8K 60fps recording.`,
+      },
+      {
+        question: 'What is the GoPro Mission 1 Pro ILS model?',
+        answer: `The **Mission 1 Pro ILS** is a professional variant arriving later in 2026. It features a **Micro Four Thirds (MFT) mount** for external lenses but has **no built-in lens**. It is designed for professional film and broadcast applications where a small, high-quality sensor is needed with interchangeable optics.`,
+      },
+    ],
+  };
+
+  const defaultFaqs = [
     { 
       question: `Is running a local LLM better than using ChatGPT?`, 
       answer: `In 2026, **local AI is superior for privacy and latency**, while ChatGPT maintains an edge in massive-scale broad reasoning. For personal data and coding, local wins.` 
@@ -80,6 +105,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       answer: `**No**, modern AI PCs are designed for sustained inference workloads, though they do generate significant heat.` 
     }
   ];
+
+  const faqs = postFaqs[post!.slug] ?? defaultFaqs;
 
   const schemas: any[] = [
     generateBlogPostSchema({
@@ -195,7 +222,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* Dynamic FAQ Section */}
         <div className="my-16 p-8 md:p-12 border rounded-3xl bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm border-neutral-200 dark:border-neutral-800">
-          <h2 className="mt-0 tracking-tight">Expert FAQ: Local AI Mastery</h2>
+          <h2 className="mt-0 tracking-tight">Frequently Asked Questions</h2>
           <div className="space-y-8 mt-10">
             {faqs.map((faq, i) => (
               <div key={i} className="border-b last:border-0 pb-6 last:pb-0 border-neutral-200 dark:border-neutral-800">

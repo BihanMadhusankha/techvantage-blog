@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE_URL}/`,
-      lastModified: new Date('2026-05-25'),
+      lastModified: new Date('2026-05-26'),
       changeFrequency: 'daily',
       priority: 1.0,
     },
@@ -28,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE_URL}/category/hardware`,
-      lastModified: new Date('2026-05-25'),
+      lastModified: new Date('2026-05-26'),
       changeFrequency: 'daily',
       priority: 0.9,
     },
