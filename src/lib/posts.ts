@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '39',
+    title: "Meta Launches Instagram, Facebook & WhatsApp Plus Subscriptions — Plus AI Plans That Could Change Everything",
+    slug: 'meta-subscriptions-instagram-facebook-whatsapp-2026',
+    description: "Meta is rolling out Instagram Plus ($3.99/mo), Facebook Plus ($3.99/mo), and WhatsApp Plus ($2.99/mo) globally, while testing Meta One AI plans up to $19.99/mo. Full fact-checked breakdown of every plan, feature, and pricing tier.",
+    category: 'Software',
+    date: '2026-05-28',
+    image: '/blog/meta-subscriptions-instagram-facebook-whatsapp-2026/meta_subscriptions_hero.webp',
+    content: `Full fact-checked breakdown of Meta's new subscription ecosystem including Instagram Plus, Facebook Plus, WhatsApp Plus, and the Meta One AI and professional tiers announced in May 2026.`,
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '38',
     title: 'GoPro Mission 1 Pro Review: The Best Action Camera Video Quality Comes at a High Price',
     slug: 'gopro-mission-1-pro-review-8k-action-camera',

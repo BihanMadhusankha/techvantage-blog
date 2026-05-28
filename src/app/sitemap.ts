@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE_URL}/`,
-      lastModified: new Date('2026-05-26'),
+      lastModified: new Date('2026-05-28'),
       changeFrequency: 'daily',
       priority: 1.0,
     },
