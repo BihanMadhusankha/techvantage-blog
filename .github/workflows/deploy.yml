@@ -19,14 +19,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Project
-        run: npm run build 
+        run: npm run build
 
       - name: Deploy via FTPS (Secure FTP)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -36,6 +36,8 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./out/
           server-dir: /public_html/
-          protocol: ftps # මෙතන "ftps" කියලා විතරක් දාන්න
-          port: 21 # FTPS වලට සාමාන්‍යයෙන් 21 පාවිච්චි වෙන්නේ (Explicit TLS)
-          timeout: 90000
+          protocol: ftps
+          port: 21
+          timeout: 300000
+          retry-count: 3
+          log-level: verbose
