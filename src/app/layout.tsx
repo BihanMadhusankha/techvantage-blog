@@ -58,6 +58,13 @@ export default function RootLayout({
           `}
         </Script>
         <Script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" strategy="lazyOnload" />
+        {/* Ad network — loads after page is interactive */}
+        <Script
+          src="https://quge5.com/88/tag.min.js"
+          data-zone="245213"
+          strategy="afterInteractive"
+          data-cfasync="false"
+        />
       </head>
       <body
         suppressHydrationWarning
