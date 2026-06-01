@@ -84,6 +84,10 @@ export default function RootLayout({
           src="https://omg10.com/4/11087294"
           strategy="afterInteractive"
         />
+        {/* Ad network 6 — n6wxm vignette zone 11087292 */}
+        <Script id="ad-n6wxm" strategy="afterInteractive" dangerouslySetInnerHTML={{
+          __html: `(function(s){s.dataset.zone='11087292',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
+        }} />
       </head>
       <body
         suppressHydrationWarning
