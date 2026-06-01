@@ -69,6 +69,12 @@ export default function RootLayout({
         <Script id="ad-al5sm" strategy="afterInteractive" dangerouslySetInnerHTML={{
           __html: `(function(s){s.dataset.zone='11087285',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
         }} />
+        {/* Ad network 3 — 5gvci zone 11087289 */}
+        <Script
+          src="https://5gvci.com/act/files/tag.min.js?z=11087289"
+          strategy="afterInteractive"
+          data-cfasync="false"
+        />
       </head>
       <body
         suppressHydrationWarning
