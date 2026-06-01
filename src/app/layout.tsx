@@ -75,6 +75,10 @@ export default function RootLayout({
           strategy="afterInteractive"
           data-cfasync="false"
         />
+        {/* Ad network 4 — nap5k zone 11087291 */}
+        <Script id="ad-nap5k" strategy="afterInteractive" dangerouslySetInnerHTML={{
+          __html: `(function(s){s.dataset.zone='11087291',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
+        }} />
       </head>
       <body
         suppressHydrationWarning
