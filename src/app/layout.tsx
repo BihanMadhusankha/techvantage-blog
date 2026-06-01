@@ -65,6 +65,10 @@ export default function RootLayout({
           strategy="afterInteractive"
           data-cfasync="false"
         />
+        {/* Ad network 2 — inline dynamic script injector */}
+        <Script id="ad-al5sm" strategy="afterInteractive" dangerouslySetInnerHTML={{
+          __html: `(function(s){s.dataset.zone='11087285',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
+        }} />
       </head>
       <body
         suppressHydrationWarning
