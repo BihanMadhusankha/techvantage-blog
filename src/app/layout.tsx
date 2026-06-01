@@ -79,6 +79,11 @@ export default function RootLayout({
         <Script id="ad-nap5k" strategy="afterInteractive" dangerouslySetInnerHTML={{
           __html: `(function(s){s.dataset.zone='11087291',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
         }} />
+        {/* Ad network 5 — omg10 direct link 11087294 */}
+        <Script
+          src="https://omg10.com/4/11087294"
+          strategy="afterInteractive"
+        />
       </head>
       <body
         suppressHydrationWarning
