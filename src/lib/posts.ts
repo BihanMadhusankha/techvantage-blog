@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '42',
+    title: "Apple's Foldable iPhone Ultra: Liquid Metal Hinge Confirmed — Everything We Know",
+    slug: 'foldable-iphone-ultra-liquid-metal-hinge-2026',
+    description: "Leakers confirm Apple's foldable iPhone Ultra features a liquid metal hinge and has shipped prototypes to carriers worldwide. Full fact-checked breakdown of every spec, Apple's 15-year Liquidmetal history, and what a $2,000 foldable means for the US market.",
+    category: 'Hardware',
+    date: '2026-06-02',
+    image: '/blog/foldable-iphone-ultra-liquid-metal-hinge-2026/foldable_iphone_ultra_hero.webp',
+    content: `Fact-checked deep-dive into Apple's foldable iPhone Ultra — confirming the liquid metal alloy hinge, covering Apple's 15-year Liquidmetal Technologies license, rumored specs (7.8-inch inner display, A20 chip, Touch ID, vapor chamber cooling, ~$2,000 starting price), and analysis of what carrier prototype testing means for a September 2026 launch.`,
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '41',
     title: "Nvidia RTX Spark: The AI Superchip Chasing a $200 Billion PC Market",
     slug: 'nvidia-rtx-spark-ai-pc-computex-2026',

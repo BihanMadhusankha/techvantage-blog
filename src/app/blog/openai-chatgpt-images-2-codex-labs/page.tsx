@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { constructMetadata, generateBlogPostSchema, generateFAQSchema } from "@/lib/seo";
 import { POSTS } from '@/lib/posts';
+import { AdPlaceholder } from '@/components/ads/AdPlaceholder';
 
 export const metadata = constructMetadata({
   title: "OpenAI Unveils ChatGPT Images 2 & Scales Codex Labs for Enterprise",
@@ -97,6 +98,10 @@ export default function OpenAIChatGPTImages2CodexLabsPage() {
           </p>
         </div>
       </div>
+
+      
+        {/* Advertisement Banner */}
+        <AdPlaceholder type="header" />
 
       <div className="prose dark:prose-invert lg:prose-xl max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-emerald-600 dark:prose-a:text-emerald-400 hover:prose-a:text-emerald-500 prose-strong:text-neutral-900 dark:prose-strong:text-white prose-img:rounded-3xl">
 

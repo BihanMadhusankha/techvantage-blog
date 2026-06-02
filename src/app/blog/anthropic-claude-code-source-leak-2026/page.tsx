@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { constructMetadata, generateBlogPostSchema, generateFAQSchema } from "@/lib/seo";
+import { AdPlaceholder } from '@/components/ads/AdPlaceholder';
 
 export const metadata = constructMetadata({
   title: "Anthropic Claude Code Source Leak: Kairos Daemon, Buddy Pet & Secret AI Roadmap Revealed",
@@ -112,6 +113,10 @@ export default function ClaudeCodeLeakPage() {
           </p>
         </div>
       </div>
+
+      
+        {/* Advertisement Banner */}
+        <AdPlaceholder type="header" />
 
       <div className="prose dark:prose-invert lg:prose-xl max-w-none prose-headings:font-bold prose-a:text-violet-600 prose-strong:text-neutral-900 dark:prose-strong:text-neutral-100">
 
@@ -383,6 +388,10 @@ export default function ClaudeCodeLeakPage() {
         </p>
 
       </div>
+
+      
+        {/* In-Article Advertisement */}
+        <AdPlaceholder type="content" description="In-Article Advertisement" />
 
       {/* FAQ Section */}
       <div className="mt-24 p-10 md:p-16 border rounded-[3rem] bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm border-neutral-200 dark:border-neutral-800 shadow-lg">

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { constructMetadata, generateBlogPostSchema, generateFAQSchema } from "@/lib/seo";
 import { POSTS } from '@/lib/posts';
+import { AdPlaceholder } from '@/components/ads/AdPlaceholder';
 
 export const metadata = constructMetadata({
   title: "How Dangerous Is Anthropic's Mythos AI? The Future of Hacking",
@@ -96,6 +97,10 @@ export default function AnthropicMythosAIPage() {
           </p>
         </div>
       </div>
+
+      
+        {/* Advertisement Banner */}
+        <AdPlaceholder type="header" />
 
       <div className="prose dark:prose-invert lg:prose-xl max-w-none prose-headings:font-black prose-a:text-indigo-600 dark:prose-a:text-indigo-400 hover:prose-a:text-indigo-500 prose-strong:text-neutral-900 dark:prose-strong:text-white prose-img:rounded-3xl font-sans">
 
@@ -213,6 +218,10 @@ export default function AnthropicMythosAIPage() {
           ))}
         </div>
       </div>
+
+      
+        {/* In-Article Advertisement */}
+        <AdPlaceholder type="content" description="In-Article Advertisement" />
 
       {/* FAQ Section */}
       <div className="mt-20 p-8 md:p-12 rounded-[3rem] bg-gradient-to-b from-neutral-50 to-white dark:from-neutral-900 dark:to-neutral-950 shadow-lg border border-neutral-200 dark:border-neutral-800">

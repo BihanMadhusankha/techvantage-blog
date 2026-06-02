@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { constructMetadata, generateBlogPostSchema, generateFAQSchema } from "@/lib/seo";
 import { POSTS } from '@/lib/posts';
+import { AdPlaceholder } from '@/components/ads/AdPlaceholder';
 
 export const metadata = constructMetadata({
   title: "Grok Falls Flat in Washington: SpaceX's $1.75T AI Valuation Undercut",
@@ -95,6 +96,10 @@ export default function GrokGovernmentAdoptionPage() {
           </p>
         </div>
       </div>
+
+      
+        {/* Advertisement Banner */}
+        <AdPlaceholder type="header" />
 
       <div className="prose dark:prose-invert lg:prose-xl max-w-none prose-headings:font-black prose-a:text-purple-600 dark:prose-a:text-purple-400 hover:prose-a:text-purple-500 prose-strong:text-neutral-900 dark:prose-strong:text-white prose-img:rounded-3xl font-sans">
 
@@ -297,6 +302,10 @@ export default function GrokGovernmentAdoptionPage() {
         </div>
       </div>
 
+      
+        {/* In-Article Advertisement */}
+        <AdPlaceholder type="content" description="In-Article Advertisement" />
+
       {/* FAQ Section */}
       <div className="mt-20 p-8 md:p-12 rounded-[3rem] bg-gradient-to-b from-neutral-50 to-white dark:from-neutral-900 dark:to-neutral-950 shadow-lg border border-neutral-200 dark:border-neutral-800">
         <h2 className="mt-0 text-3xl font-black tracking-tight mb-10 text-neutral-900 dark:text-white flex items-center gap-4">
@@ -316,6 +325,10 @@ export default function GrokGovernmentAdoptionPage() {
           ))}
         </div>
       </div>
+
+      
+      {/* Advertisement Before Related Posts */}
+      <AdPlaceholder type="content" description="Post-Article Advertisement" />
 
       <footer className="mt-24 pt-12 border-t">
         <h3 className="text-2xl font-bold mb-8">Related Strategy Guides</h3>

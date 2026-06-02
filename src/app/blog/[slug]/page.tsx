@@ -187,6 +187,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         />
       </div>
 
+      {/* Advertisement Banner */}
+      <AdPlaceholder type="header" />
+
       <div className="prose dark:prose-invert lg:prose-xl max-w-none">
         {/* Render content with a simple formatter to handle the long guides */}
         <div 
@@ -238,6 +241,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
         </div>
       </div>
+
+      {/* Advertisement Before Related Posts */}
+      <AdPlaceholder type="content" description="Post-Article Advertisement" />
 
       <footer className="mt-24 pt-12 border-t">
         <h3 className="text-2xl font-bold mb-8">Related 2026 Strategy Guides</h3>

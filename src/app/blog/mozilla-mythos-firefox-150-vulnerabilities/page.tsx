@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { constructMetadata, generateBlogPostSchema, generateFAQSchema } from "@/lib/seo";
 import { POSTS } from '@/lib/posts';
+import { AdPlaceholder } from '@/components/ads/AdPlaceholder';
 
 export const metadata = constructMetadata({
   title: "Anthropic's Mythos Found 271 Security Vulnerabilities in Firefox 150",
@@ -98,6 +99,10 @@ export default function MozillaMythosFirefoxPage() {
           </p>
         </div>
       </div>
+
+      
+        {/* Advertisement Banner */}
+        <AdPlaceholder type="header" />
 
       <div className="prose dark:prose-invert lg:prose-xl max-w-none prose-headings:font-bold prose-a:text-indigo-600 dark:prose-a:text-indigo-400 hover:prose-a:text-indigo-500 prose-strong:text-neutral-900 dark:prose-strong:text-neutral-100 prose-img:rounded-3xl">
 
@@ -199,6 +204,10 @@ export default function MozillaMythosFirefoxPage() {
           As Anthropic continues to refine <Link href="/blog/anthropic-claude-opus-4-7-release-guide" className="underline hover:text-indigo-500 text-indigo-400">its flagship AI lineup</Link> alongside the gated access to Mythos via Project Glasswing, the cybersecurity community watches closely. Mozilla's transparency with Firefox 150 makes one thing crystal clear: the age of AI-automated software fortification is officially here.
         </p>
       </div>
+
+      
+        {/* In-Article Advertisement */}
+        <AdPlaceholder type="content" description="In-Article Advertisement" />
 
       {/* FAQ Section */}
       <div className="mt-24 p-8 md:p-14 border rounded-[3rem] bg-white dark:bg-neutral-900 lg:bg-transparent lg:dark:bg-transparent lg:shadow-none shadow-xl border-neutral-200 dark:border-neutral-800">

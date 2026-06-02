@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { constructMetadata, generateBlogPostSchema, generateFAQSchema } from "@/lib/seo";
 import { POSTS } from '@/lib/posts';
+import { AdPlaceholder } from '@/components/ads/AdPlaceholder';
 
 export const metadata = constructMetadata({
   title: "Sundar Pichai Says Graduates Booing AI Will Shape Its Future — And Live With the Consequences",
@@ -112,6 +113,10 @@ export default function SundarPichaiGraduatesAIPage() {
       </div>
 
       {/* Article Body */}
+      
+        {/* Advertisement Banner */}
+        <AdPlaceholder type="header" />
+
       <div className="prose dark:prose-invert lg:prose-xl max-w-none prose-headings:font-black prose-a:text-purple-600 dark:prose-a:text-purple-400 hover:prose-a:text-purple-500 prose-strong:text-neutral-900 dark:prose-strong:text-white prose-img:rounded-3xl font-sans">
 
         {/* Lead paragraph */}
@@ -354,6 +359,10 @@ export default function SundarPichaiGraduatesAIPage() {
         </div>
       </div>
 
+      
+        {/* In-Article Advertisement */}
+        <AdPlaceholder type="content" description="In-Article Advertisement" />
+
       {/* FAQ Section */}
       <div className="mt-20 p-8 md:p-12 rounded-[3rem] bg-gradient-to-b from-neutral-50 to-white dark:from-neutral-900 dark:to-neutral-950 shadow-lg border border-neutral-200 dark:border-neutral-800">
         <h2 className="mt-0 text-3xl font-black tracking-tight mb-10 text-neutral-900 dark:text-white flex items-center gap-4">
@@ -375,6 +384,10 @@ export default function SundarPichaiGraduatesAIPage() {
       </div>
 
       {/* Related Posts */}
+      
+      {/* Advertisement Before Related Posts */}
+      <AdPlaceholder type="content" description="Post-Article Advertisement" />
+
       <footer className="mt-24 pt-12 border-t border-neutral-200 dark:border-neutral-800">
         <h3 className="text-2xl font-bold mb-8 text-neutral-900 dark:text-white">Related Articles</h3>
         <div className="grid md:grid-cols-2 gap-8">

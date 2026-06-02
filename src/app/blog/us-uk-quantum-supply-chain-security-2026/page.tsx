@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import { AdPlaceholder } from '@/components/ads/AdPlaceholder';
 
 export const metadata: Metadata = {
   title: 'US Presses UK to Secure Quantum Computing Supply Chains: A 2026 Tech Stand-off',
@@ -38,6 +39,10 @@ export default function QuantumSupplyChainPage() {
           className="object-cover"
         />
       </div>
+
+      
+        {/* Advertisement Banner */}
+        <AdPlaceholder type="header" />
 
       <div className="prose prose-lg dark:prose-invert max-w-none">
         <p>
@@ -121,6 +126,10 @@ export default function QuantumSupplyChainPage() {
           </details>
         </div>
       </div>
+
+      
+      {/* Advertisement Before Related Posts */}
+      <AdPlaceholder type="content" description="Post-Article Advertisement" />
 
       <footer className="mt-16 pt-8 border-t border-neutral-100 dark:border-neutral-900 text-sm text-neutral-500">
         <p>Source Materials: Financial Times (ed96f112-a7ec-48db-b43b-fe01902a7394), US Department of Commerce Data (2026).</p>

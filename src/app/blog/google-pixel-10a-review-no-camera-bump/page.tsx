@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { constructMetadata } from "@/lib/seo";
+import { AdPlaceholder } from '@/components/ads/AdPlaceholder';
 
 export const metadata = constructMetadata({
   title: "Google Pixel 10a Review: The Flat Design King that Finally Dumps the Camera Bump",
@@ -58,6 +59,10 @@ export default function Pixel10aReviewPage() {
           className="object-cover hover:scale-105 transition-transform duration-700"
         />
       </div>
+
+      
+        {/* Advertisement Banner */}
+        <AdPlaceholder type="header" />
 
       <div className="prose dark:prose-invert lg:prose-xl max-w-none prose-headings:font-bold prose-a:text-indigo-600 prose-strong:text-neutral-900 dark:prose-strong:text-neutral-100">
         <h2 className="text-4xl mt-16 mb-8 text-neutral-900 dark:text-neutral-50">Design: The Death of the Camera Bump</h2>

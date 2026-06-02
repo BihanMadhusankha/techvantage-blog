@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { constructMetadata, generateBlogPostSchema, generateFAQSchema } from "@/lib/seo";
 import { POSTS } from '@/lib/posts';
+import { AdPlaceholder } from '@/components/ads/AdPlaceholder';
 
 export const metadata = constructMetadata({
   title: "Claude Design by Anthropic Labs: The New Era of AI Visual Collaboration",
@@ -104,6 +105,10 @@ export default function ClaudeDesignLaunchPage() {
         </div>
       </div>
 
+      
+        {/* Advertisement Banner */}
+        <AdPlaceholder type="header" />
+
       <div className="prose dark:prose-invert lg:prose-xl max-w-none prose-headings:font-bold prose-a:text-indigo-600 prose-strong:text-neutral-900 dark:prose-strong:text-neutral-100">
 
         <p className="lead text-2xl text-neutral-700 dark:text-neutral-300 font-medium italic border-l-8 border-indigo-600 pl-8 mb-16 py-4 bg-indigo-50/30 dark:bg-indigo-950/20 rounded-r-2xl shadow-sm">
@@ -177,6 +182,10 @@ export default function ClaudeDesignLaunchPage() {
           Collaboration tools have evolved immensely, but by fusing the creative phase (Claude Design) with the engineering implementation phase (Claude Code), Anthropic is creating a frictionless ecosystem for modern software delivery. As they add more integrations in the coming weeks, the workflow for building digital products will likely never look the same again.
         </p>
       </div>
+
+      
+        {/* In-Article Advertisement */}
+        <AdPlaceholder type="content" description="In-Article Advertisement" />
 
       {/* FAQ Section */}
       <div className="mt-24 p-10 md:p-16 border rounded-[3rem] bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm border-neutral-200 dark:border-neutral-800 shadow-lg">

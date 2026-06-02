@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { constructMetadata, generateBlogPostSchema, generateFAQSchema } from "@/lib/seo";
+import { AdPlaceholder } from '@/components/ads/AdPlaceholder';
 
 export const metadata = constructMetadata({
   title: "Sony PS5 Price Hike 2026: Why Prices are Skyrocketing and How to Save $150 Before April 2nd",
@@ -86,6 +87,10 @@ export default function PS5PriceHikePage() {
           className="object-cover"
         />
       </div>
+
+      
+        {/* Advertisement Banner */}
+        <AdPlaceholder type="header" />
 
       <div className="prose dark:prose-invert lg:prose-xl max-w-none">
         <p className="lead text-xl text-neutral-600 dark:text-neutral-300 italic border-l-4 border-blue-600 pl-6 mb-12">

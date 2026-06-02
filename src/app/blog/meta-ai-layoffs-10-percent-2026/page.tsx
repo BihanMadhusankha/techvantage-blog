@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { constructMetadata, generateBlogPostSchema, generateFAQSchema } from "@/lib/seo";
 import { POSTS } from '@/lib/posts';
+import { AdPlaceholder } from '@/components/ads/AdPlaceholder';
 
 export const metadata = constructMetadata({
   title: "Meta to Cut 10% of Workforce in Massive A.I. Pivot",
@@ -94,6 +95,10 @@ export default function MetaAILayoffsPage() {
           </p>
         </div>
       </div>
+
+      
+        {/* Advertisement Banner */}
+        <AdPlaceholder type="header" />
 
       <div className="prose dark:prose-invert lg:prose-xl max-w-none prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 hover:prose-a:text-blue-500 prose-strong:text-neutral-900 dark:prose-strong:text-neutral-100 prose-img:rounded-3xl">
 
@@ -190,6 +195,10 @@ export default function MetaAILayoffsPage() {
           This is a defining moment for the US tech workforce. As artificial intelligence continues to evolve from simple chatbots into complex, reasoning engines, the definition of a "tech job" is fundamentally changing. The era of mass-hiring software engineers may be ending, replaced by smaller teams of highly skilled "AI conductors" who orchestrate digital workforces.
         </p>
       </div>
+
+      
+        {/* In-Article Advertisement */}
+        <AdPlaceholder type="content" description="In-Article Advertisement" />
 
       {/* FAQ Section */}
       <div className="mt-24 p-8 md:p-14 border rounded-[3rem] bg-white dark:bg-neutral-900 lg:bg-transparent lg:dark:bg-transparent lg:shadow-none shadow-xl border-neutral-200 dark:border-neutral-800">

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { constructMetadata, generateBlogPostSchema, generateFAQSchema } from "@/lib/seo";
 import { POSTS } from '@/lib/posts';
+import { AdPlaceholder } from '@/components/ads/AdPlaceholder';
 
 export const metadata = constructMetadata({
   title: "Anthropic & Amazon Announce Massive 5 Gigawatt Compute Expansion",
@@ -101,6 +102,10 @@ export default function AnthropicAmazonComputePage() {
         </div>
       </div>
 
+      
+        {/* Advertisement Banner */}
+        <AdPlaceholder type="header" />
+
       <div className="prose dark:prose-invert lg:prose-xl max-w-none prose-headings:font-bold prose-a:text-orange-600 dark:prose-a:text-orange-400 hover:prose-a:text-orange-500 prose-strong:text-neutral-900 dark:prose-strong:text-neutral-100 prose-img:rounded-3xl">
 
         <p className="lead text-2xl text-neutral-700 dark:text-neutral-300 font-medium italic border-l-8 border-orange-500 pl-8 mb-16 py-4 bg-orange-50/50 dark:bg-orange-900/10 rounded-r-2xl shadow-sm">
@@ -196,6 +201,10 @@ export default function AnthropicAmazonComputePage() {
           The $100 billion decade-long runway is more than an impressive number; it represents a fundamental maturation of AI. It answers the physical question regarding how society's most intelligent digital minds will be housed, wired, and cooled in an energy-limited world. 
         </p>
       </div>
+
+      
+        {/* In-Article Advertisement */}
+        <AdPlaceholder type="content" description="In-Article Advertisement" />
 
       {/* FAQ Section */}
       <div className="mt-24 p-8 md:p-14 border rounded-[3rem] bg-white dark:bg-neutral-900 lg:bg-transparent lg:dark:bg-transparent lg:shadow-none shadow-xl border-neutral-200 dark:border-neutral-800">
