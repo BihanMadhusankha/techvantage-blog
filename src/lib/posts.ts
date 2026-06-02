@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '41',
+    title: "Nvidia RTX Spark: The AI Superchip Chasing a $200 Billion PC Market",
+    slug: 'nvidia-rtx-spark-ai-pc-computex-2026',
+    description: "Nvidia unveiled the RTX Spark superchip at Computex 2026 — a 1-petaflop ARM-based AI PC platform backed by Dell, HP, Microsoft Surface, Lenovo, ASUS, and MSI. A full fact-checked breakdown of every claim, spec, and market ambition behind Jensen Huang's boldest PC bet yet.",
+    category: 'Hardware',
+    date: '2026-06-02',
+    image: '/blog/nvidia-rtx-spark-ai-pc-computex-2026/nvidia_rtx_spark_hero.webp',
+    content: `Fact-checked analysis of Nvidia's RTX Spark superchip announced at Computex 2026 — covering the 1-petaflop ARM-based chip specs, Jensen Huang's $200 billion CPU market ambitions, AI agent support for OpenClaw and Hermes Agent, and why this is nothing like the 2013 Surface RT disaster.`,
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '40',
     title: "Top AI Coding Tools for 2026: The Ultimate Fact-Checked Guide for Developers",
     slug: 'top-ai-coding-tools-2026',
