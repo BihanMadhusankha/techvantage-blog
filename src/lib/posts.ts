@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '43',
+    title: "Gemma 4 12B: Google's Encoder-Free Multimodal AI Model That Runs on Your Laptop",
+    slug: 'gemma-4-12b-encoder-free-multimodal-2026',
+    description: "Google DeepMind launches Gemma 4 12B — an encoder-free, unified multimodal AI with native audio & vision inputs, benchmark performance near the 26B MoE, and only 16GB VRAM needed. Full fact-checked breakdown for developers.",
+    category: 'AI',
+    date: '2026-06-04',
+    image: '/blog/gemma-4-12b-encoder-free-multimodal-2026/gemma_4_12b_hero.webp',
+    content: `Fact-checked deep-dive into Google DeepMind's Gemma 4 12B — covering the encoder-free unified architecture for vision and audio, 16GB VRAM local inference, Multi-Token Prediction drafters, Gemma Skills Repository, and benchmark performance nearing the 26B MoE model.`,
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '42',
     title: "Apple's Foldable iPhone Ultra: Liquid Metal Hinge Confirmed — Everything We Know",
     slug: 'foldable-iphone-ultra-liquid-metal-hinge-2026',
