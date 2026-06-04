@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '44',
+    title: "NVIDIA & Microsoft Reinvent the Windows PC for Personal AI Agents — RTX Spark Full Breakdown",
+    slug: 'nvidia-rtx-spark-windows-personal-ai-gtc-2026',
+    description: "NVIDIA and Microsoft unveil RTX Spark at GTC Taipei — a 1-petaflop superchip with 128GB unified memory, OpenShell agent security, Adobe 2x performance, 120B local LLMs, and 1440p gaming on a 14mm slim laptop.",
+    category: 'Hardware',
+    date: '2026-06-04',
+    image: '/blog/nvidia-rtx-spark-windows-personal-ai-gtc-2026/rtx_spark_gtc_hero.webp',
+    content: `Full fact-checked deep-dive into NVIDIA RTX Spark announced at GTC Taipei 2026 — covering the Blackwell superchip specs, NVIDIA OpenShell agent security with Microsoft, Adobe Photoshop and Premiere 2x performance boost, 120B parameter local LLMs with 1 million token context, 1440p gaming, DLSS 4.5, and all confirmed PC maker partners.`,
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '43',
     title: "Gemma 4 12B: Google's Encoder-Free Multimodal AI Model That Runs on Your Laptop",
     slug: 'gemma-4-12b-encoder-free-multimodal-2026',
