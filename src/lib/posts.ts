@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '45',
+    title: "iOS 27: Seven New iPhone Features Coming Soon in 2026",
+    slug: 'ios-27-seven-new-iphone-features-2026',
+    description: "Apple is set to announce iOS 27 at WWDC 2026. Discover the seven biggest rumored features, including a standalone Siri AI chatbot, new Apple Photos tools, and visual intelligence upgrades.",
+    category: 'Software',
+    date: '2026-06-07',
+    image: '/blog/ios-27-seven-new-iphone-features-2026/ios_27_hero.webp',
+    content: `Apple's WWDC 2026 is approaching, bringing iOS 27 with it. Fact-checked rumors point to a massive AI overhaul including a standalone Siri chatbot app powered by Gemini technology, generative photo editing tools, advanced camera Visual Intelligence, and much more.`,
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '44',
     title: "NVIDIA & Microsoft Reinvent the Windows PC for Personal AI Agents — RTX Spark Full Breakdown",
     slug: 'nvidia-rtx-spark-windows-personal-ai-gtc-2026',
