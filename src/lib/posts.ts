@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '46',
+    title: "AI CEOs Warn Congress: The Rising Threat of AI-Generated Bioweapons",
+    slug: 'ai-ceos-congress-bioweapons-warning-2026',
+    description: "CEOs of OpenAI, Anthropic, and Microsoft sign a historic letter urging Congress to mandate synthetic DNA and RNA screening to prevent AI from helping create bioweapons.",
+    category: 'AI',
+    date: '2026-06-07',
+    image: '/blog/ai-ceos-congress-bioweapons-warning-2026/header.webp',
+    content: "Full fact-checked breakdown of the historic letter signed by the CEOs of OpenAI, Anthropic, and Microsoft urging Congress to screen synthetic DNA and RNA to prevent AI-generated bioweapons.",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '45',
     title: "iOS 27: Seven New iPhone Features Coming Soon in 2026",
     slug: 'ios-27-seven-new-iphone-features-2026',
