@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '47',
+    title: "GTA 6 Fans Rage Over 'Greedy' Paywalls & $100 Price Tag — Full Fact-Check",
+    slug: 'gta6-price-controversy-paywall-2026',
+    description: "Grand Theft Auto VI launches at $79.99 with cars, tattoo shops, clothing stores, and missions locked behind a $100 Ultimate Edition. Fact-checked breakdown of every claim, the GTA+ auto-renew trap, and why 80% of gamers still plan to buy it.",
+    category: 'Hardware',
+    date: '2026-06-29',
+    image: '/blog/gta6-price-controversy-paywall-2026/gta6_hero_banner.webp',
+    content: "Full fact-checked breakdown of the GTA VI pricing controversy — $79.99 Standard vs $99.99 Ultimate Edition, in-game content paywalls, the GTA+ auto-renew subscription trap, no physical disc, and what the Insider Gaming poll of 10,000+ gamers reveals.",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '46',
     title: "AI CEOs Warn Congress: The Rising Threat of AI-Generated Bioweapons",
     slug: 'ai-ceos-congress-bioweapons-warning-2026',
