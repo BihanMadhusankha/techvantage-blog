@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '50',
+    title: "KIDS Act Passes House 267-117: What the Children's Online Safety Law Means for US Families, Big Tech & Free Speech",
+    slug: 'kids-act-house-passed-children-online-safety-2026',
+    description: "The bipartisan KIDS Act passed the House 267–117 on June 29, 2026 — requiring parental controls, AI chatbot rules, age verification, and restricting data targeting of minors. Full fact-checked breakdown of every provision, the EFF's criticism, and the Senate outlook.",
+    category: 'Software',
+    date: '2026-06-30',
+    image: '/blog/kids-act-house-passed-children-online-safety-2026/kids_act_house_vote_hero.webp',
+    content: "Comprehensive fact-checked breakdown of the KIDS Act (H.R. 7757) House passage — all 6 major provision areas, KOSA vs KIDS Act duty-of-care comparison, EFF surveillance and free speech criticism, COPPA 2.0 expansion to age 17, and Senate reconciliation challenges ahead.",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '49',
     title: "Apple Watch Series 13 Redesign Coming 2027: New Magnetic Band System, 8-Sensor Ring & HMO Display",
     slug: 'apple-watch-series-13-redesign-new-band-2027',
