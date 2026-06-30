@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '48',
+    title: "iPhone 18 Pro Dark Cherry Color Leak: SIM Tray Image Confirms Apple's 2026 Signature Finish",
+    slug: 'iphone-18-pro-dark-cherry-color-leak-2026',
+    description: "Leaked SIM tray images from Ice Universe on Weibo reveal the iPhone 18 Pro Dark Cherry color (Pantone 6076). Full fact-checked breakdown of all four confirmed colors — Dark Cherry, Light Blue, Dark Gray, Silver — the no-black confirmation, and foldable iPhone color rumors.",
+    category: 'Hardware',
+    date: '2026-06-30',
+    image: '/blog/iphone-18-pro-dark-cherry-color-leak-2026/iphone18pro_dark_cherry_hero.webp',
+    content: "Full fact-checked breakdown of the iPhone 18 Pro Dark Cherry color leak — Pantone 6076 analysis, all four rumored colors with dummy model evidence, Ice Universe's no-black confirmation, and foldable iPhone color palette comparison.",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '47',
     title: "GTA 6 Fans Rage Over 'Greedy' Paywalls & $100 Price Tag — Full Fact-Check",
     slug: 'gta6-price-controversy-paywall-2026',
