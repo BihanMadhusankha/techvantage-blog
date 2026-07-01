@@ -27,11 +27,16 @@ const images = [
   },
 ];
 
-for (const { src, dest } of images) {
-  const input = path.join(srcDir, src);
-  const output = path.join(destDir, dest);
-  await sharp(input).webp({ quality: 85 }).toFile(output);
-  console.log(`✅ Converted: ${dest}`);
-}
+try {
+  for (const { src, dest } of images) {
+    const input = path.join(srcDir, src);
+    const output = path.join(destDir, dest);
+    await sharp(input).webp({ quality: 85 }).toFile(output);
+    console.log(`✅ Converted: ${dest}`);
+  }
 
-console.log('\n🎉 All images converted successfully!');
+  console.log('\n🎉 All images converted successfully!');
+} catch (error) {
+  console.error('❌ Error converting images:', error.message);
+  process.exit(1);
+}
