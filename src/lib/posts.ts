@@ -12,6 +12,28 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '52',
+    title: "AWS Invests $1 Billion in Forward Deployed Engineering Unit to Embed AI Engineers With Customers",
+    slug: 'aws-fde-billion-dollar-ai-unit-2026',
+    description: "Amazon Web Services launches a $1 billion Forward Deployed Engineering (FDE) division — seeding thousands of engineers directly inside customer businesses alongside AI agents. Full fact-checked breakdown of the '45-45-45' framework, early adopters like NBA & NFL, and how AWS competes with OpenAI and Anthropic's own FDE companies.",
+    category: 'AI',
+    date: '2026-07-01',
+    image: '/blog/aws-fde-billion-dollar-ai-unit-2026/aws_fde_hero.webp',
+    content: "Full fact-checked breakdown of AWS's $1 billion Forward Deployed Engineering unit — the '45-45-45' speed framework, 5-6 engineer pods working alongside AI agents, early adopters including NBA, NFL, and Southwest Airlines, and a detailed comparison of AWS vs. OpenAI DeployCo vs. Anthropic AI Services.",
+    author: 'Bihan Madhusankha',
+  },
+  {
+    id: '51',
+    title: "Meta Quest Peak Summer Sale 2026: Best VR Game Deals Up to 80% Off — Full Breakdown",
+    slug: 'meta-quest-peak-summer-sale-2026-best-vr-deals',
+    description: "Meta Horizon Store's Peak Summer Sale runs until July 5, 2026 at 11:59pm PT. Ghost Signal for $1.99, Dungeons of Eternity for $14.99, Walking Dead and Stealth Masters bundles — every standout deal fact-checked and ranked.",
+    category: 'Hardware',
+    date: '2026-06-30',
+    image: '/blog/meta-quest-peak-summer-sale-2026-best-vr-deals/meta_quest_summer_sale_hero.webp',
+    content: "Full fact-checked breakdown of the Meta Horizon Store Peak Summer Sale 2026 — 12 standout deals ranked by discount, Walking Dead and Stealth Masters bundle details, top 3 picks (Ghost Signal, Dungeons of Eternity, Synth Riders), and buyer guidance before the July 5 deadline.",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '50',
     title: "KIDS Act Passes House 267-117: What the Children's Online Safety Law Means for US Families, Big Tech & Free Speech",
     slug: 'kids-act-house-passed-children-online-safety-2026',
