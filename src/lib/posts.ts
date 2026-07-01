@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '53',
+    title: "Why Quantum Computing May Be the White House's Next AI — Trump's EO 14413 Explained",
+    slug: 'quantum-computing-white-house-trump-2026',
+    description: "President Trump signed Executive Order 14413 on June 22, 2026, betting America's tech future on quantum computing. A full fact-checked breakdown of qubits vs. bits, why China holds 60% of global patents, what IBM's roadmap says about 2029, the Bitcoin threat, and whether this is real science or the next AI hype cycle.",
+    category: 'AI',
+    date: '2026-07-01',
+    image: '/blog/quantum-computing-white-house-trump-2026/quantum_hero.webp',
+    content: "Full fact-checked breakdown of Trump's EO 14413 quantum computing push — superposition, entanglement, and interference explained; China's 60% global patent lead; IBM's Starling (200 qubits, 2029) and Blue Jay (2,000 qubits, 2033) roadmap; the $1.3T economic impact figure clarified; near-term applications in drug discovery and finance; and an honest assessment of where the hype outpaces the engineering.",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '52',
     title: "AWS Invests $1 Billion in Forward Deployed Engineering Unit to Embed AI Engineers With Customers",
     slug: 'aws-fde-billion-dollar-ai-unit-2026',
