@@ -38,6 +38,4 @@ jobs:
           server-dir: /public_html/
           protocol: ftps
           port: 21
-          timeout: 300000
-          retry-count: 3
           log-level: verbose
