@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '54',
+    title: "Sony's RX10 V Superzoom Arrives: 4K 120p Video, Deep Learning AF, and a $2,300 Price",
+    slug: 'sony-rx10-v-superzoom-4k-120p-review-2026',
+    description: "Sony has officially unveiled the RX10 V, a superzoom compact camera with a 24-600mm ZEISS F2.4-4.0 lens, BIONZ XR processing with a dedicated AI unit, 4K 120p video capability, and a sleek revamped design.",
+    category: 'Hardware',
+    date: '2026-07-09',
+    image: '/blog/sony-rx10-v-superzoom-4k-120p-review-2026/sony_rx10v_hero.webp',
+    content: "Full fact-checked breakdown of the Sony RX10 V superzoom camera launch - 24-600mm ZEISS lens, BIONZ XR processor + AI tracking, 4K 120p and 10-bit recording, ergonomic overhauled body, NP-FZ100 battery, sitemap/FAQ inclusion, and direct 4K streaming.",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '53',
     title: "Why Quantum Computing May Be the White House's Next AI — Trump's EO 14413 Explained",
     slug: 'quantum-computing-white-house-trump-2026',
