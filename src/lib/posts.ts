@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '55',
+    title: "SpaceXAI Launches Grok 4.5: Benchmarks, 4.2x Token Efficiency, and Pricing",
+    slug: 'spacexai-grok-4-5-release-benchmarks-pricing-2026',
+    description: "SpaceXAI has officially launched Grok 4.5, optimized for complex reasoning, coding, and agentic tasks. Here is a full fact-checked breakdown of the benchmarks, pricing, and Cursor integrations.",
+    category: 'AI',
+    date: '2026-07-10',
+    image: '/blog/spacexai-grok-4-5-release-benchmarks-pricing-2026/grok_4_5_hero.webp',
+    content: "Full fact-checked breakdown of the SpaceXAI Grok 4.5 release - covering DeepSWE 1.0 and 1.1 coding benchmarks, 80 TPS serving speeds, SWE Bench Pro 4.2x token efficiency comparison, Grok Build automation, and developer API configurations.",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '54',
     title: "Sony's RX10 V Superzoom Arrives: 4K 120p Video, Deep Learning AF, and a $2,300 Price",
     slug: 'sony-rx10-v-superzoom-4k-120p-review-2026',
