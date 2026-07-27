@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '57',
+    title: "Canon EOS R6 V Review: A Pro Vlogging Camera at a Mirrorless Price — Fact-Checked Breakdown",
+    slug: 'canon-eos-r6-v-review-2026',
+    description: "Canon's EOS R6 V packs a 33MP full-frame sensor, 7K 12-bit RAW open-gate video, active fan cooling, and 7.5-stop IBIS into a $2,500 mirrorless body. Full fact-checked review and competition analysis.",
+    category: 'Hardware',
+    date: '2026-07-27',
+    image: '/blog/canon-eos-r6-v-review-2026/canon_r6v_hero.webp',
+    content: "Comprehensive fact-checked review of the Canon EOS R6 V - featuring 33MP full-frame sensor, 7K RAW & open-gate recording, active cooling system tested for 80+ minutes continuous shooting, Dual Pixel AF II with product showcase demo mode, ergonomics comparison with Sony ZV-E1 and Nikon ZR, photography limitations (no EVF, 12-bit electronic shutter), FAQ, and complete buyer guide for US creators.",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '56',
     title: "ChatGPT's Health Launch Is Foreshadowing The Future Of Healthcare — Full Fact-Checked Breakdown",
     slug: 'chatgpt-health-platform-future-healthcare-2026',
