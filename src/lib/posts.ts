@@ -1678,4 +1678,27 @@ At $199, the TCL NXTPAPER 70 Pro is an absolute steal for anyone prioritizing ey
 `,
     author: 'Bihan Madhusankha',
   },
+  {
+    id: '21',
+    title: 'Samsung Galaxy Z Fold 8 Deal: Get It for $599',
+    slug: 'galaxy-z-fold-8-599-deal-2026',
+    description: 'The Samsung Galaxy Z Fold 8 can be purchased for $599 – a massive discount on the premium foldable. Here’s the full fact‑checked breakdown of the deal, specs, and where to buy.',
+    category: 'Hardware',
+    date: '2026-07-27',
+    image: '/blog/galaxy-z-fold-8-599-deal-2026/hero.webp',
+    content: `
+    `,
+    author: 'Bihan Madhusankha',
+  },
+  {
+    id: '22',
+    title: "Google Maps' Biggest Android Auto Upgrade Is Reaching More Users — Immersive Navigation & Live Speedometer",
+    slug: 'google-maps-android-auto-upgrade-2026',
+    description: "Google Maps is rolling out Immersive Navigation and a built-in live speedometer to Android Auto users on stable builds. Full fact-checked breakdown of what's new, how it works, and when you'll get it.",
+    category: 'Software',
+    date: '2026-07-27',
+    image: '/blog/google-maps-android-auto-upgrade-2026/hero.webp',
+    content: `Full fact-checked breakdown of Google Maps' biggest Android Auto upgrade — covering the 3-D Immersive Navigation view, built-in live speedometer with speed-limit color alerts, server-side rollout from beta to stable builds, before/after feature comparison, and step-by-step guide to check if your device has the update.`,
+    author: 'Bihan Madhusankha',
+  },
 ];
