@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '58',
+    title: "Apple & Klarna Launch 'Apple Upgrade': Lease an iPhone from $17.99/Mo — Fact-Checked Breakdown",
+    slug: 'apple-upgrade-klarna-iphone-leasing-2026',
+    description: "Apple partners with Klarna to launch 'Apple Upgrade', allowing US customers to lease iPhones starting at $17.99/mo, plus Macs, iPads, and Apple Watches. Full fact-checked analysis of pricing, credit checks, replacement cycles, and carrier competition.",
+    category: 'Hardware',
+    date: '2026-07-28',
+    image: '/blog/apple-upgrade-klarna-iphone-leasing-2026/hero.webp',
+    content: "Full fact-checked breakdown of Apple's new Klarna partnership for device leasing in the US — starting at $17.99/mo for iPhones, 1-3 year lease terms across iPhone, Mac, iPad, and Apple Watch, soft credit check policy, missed payment rules, discontinuation of Citizens Bank Upgrade Program, carrier competition with AT&T/Verizon/T-Mobile, memory crunch BOM cost pressures, and Tim Cook's final earnings report as CEO.",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '57',
     title: "Canon EOS R6 V Review: A Pro Vlogging Camera at a Mirrorless Price — Fact-Checked Breakdown",
     slug: 'canon-eos-r6-v-review-2026',
