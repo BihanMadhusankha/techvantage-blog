@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '59',
+    title: "Apple Exec Says 'Hold Us Accountable' on iPhone Duo Crease: The Science of Matte Nano-Texture & Torque",
+    slug: 'apple-iphone-duo-crease-hinge-durability-2026',
+    description: "Apple hardware VP Tom Marieb tells TechRadar to 'hold us accountable' on the iPhone Duo crease. Here is how matte nano-texture glass, automotive torque engineering, and Ceramic Shield 2 aim to solve foldables' biggest flaw.",
+    category: 'Hardware',
+    date: '2026-10-18',
+    image: '/blog/apple-iphone-duo-crease-hinge-durability-2026/iphone_duo_hero.webp',
+    content: "Full fact-checked breakdown of Apple VP Tom Marieb's TechRadar interview on the iPhone Duo foldable — exploring how matte nano-texture glass diffuses light to conceal crease topology, the automotive car door torque profile, why screen protectors make Apple engineers cringe, Ceramic Shield 2 durability, $1,999 U.S. pricing, pre-order timelines, and how the Klarna Apple Upgrade leasing program impacts buyers.",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '58',
     title: "Apple & Klarna Launch 'Apple Upgrade': Lease an iPhone from $17.99/Mo — Fact-Checked Breakdown",
     slug: 'apple-upgrade-klarna-iphone-leasing-2026',
