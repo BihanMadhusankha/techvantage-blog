@@ -47,7 +47,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             <article key={post.id} className="grid grid-cols-1 md:grid-cols-2 gap-6 group">
               <div className="relative aspect-[16/10] overflow-hidden rounded-lg bg-neutral-100">
                 <Image 
-                  src={`${post.image.split('?')[0]}?auto=format&fit=crop&q=75&w=800`} 
+                  src={post.image.startsWith('/') ? post.image : `${post.image.split('?')[0]}?auto=format&fit=crop&q=75&w=800`} 
                   alt={post.title}
                   fill
                   priority={filteredPosts.indexOf(post) === 0}

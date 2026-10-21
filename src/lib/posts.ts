@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '60',
+    title: "Google's Personalized Gemini AI Is Heading to Your Car: Full Fact-Checked Breakdown",
+    slug: 'google-gemini-personalized-ai-android-auto-car-2026',
+    description: "Google is rolling out 'Personal Intelligence with Gemini' to Android Auto and Google Built-in vehicles. Discover how cross-app intelligence connects Gmail, Calendar, Maps, and Photos while you drive.",
+    category: 'AI',
+    date: '2026-10-21',
+    image: '/blog/google-gemini-personalized-ai-android-auto-car-2026/gemini_car_hero.webp',
+    content: "Full fact-checked breakdown of Google's 'Personal Intelligence with Gemini' automotive upgrade — covering cross-app synthesis across Gmail, Calendar, Maps, and YouTube, multi-intent compound voice queries, proactive flight and navigation alerts, two-phase rollout to Android Auto and Google Built-in, granular opt-in privacy toggles, and ecosystem lock-in implications.",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '59',
     title: "Apple Exec Says 'Hold Us Accountable' on iPhone Duo Crease: The Science of Matte Nano-Texture & Torque",
     slug: 'apple-iphone-duo-crease-hinge-durability-2026',
