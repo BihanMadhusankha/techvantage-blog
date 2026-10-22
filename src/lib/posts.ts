@@ -12,6 +12,17 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    id: '61',
+    title: "Meta Hit With Historic $25B Privacy Judgment as New Mexico AG Puts Frontier AI on Notice",
+    slug: 'meta-25-billion-judgment-new-mexico-ag-ai-probe-2026',
+    description: "A New Mexico judge ordered Meta to pay $25 billion over 43 million consumer privacy violations from Cambridge Analytica, while AG Raúl Torrez opens a probe into OpenAI and Anthropic 'loss of control' events.",
+    category: 'Software',
+    date: '2026-10-22',
+    image: '/blog/meta-25-billion-judgment-new-mexico-ag-ai-probe-2026/meta_25b_verdict_hero.webp',
+    content: "Full fact-checked breakdown of the record $25 billion civil judgment against Meta in New Mexico — covering 43 million consumer protection violations, Cambridge Analytica fallout, Meta's appeal claiming a 'tax on speech', school construction funding, AG Raúl Torrez's new probe into OpenAI and Anthropic 'loss of control' events, Trump's AI deregulation and data center agenda, and congressional hearings on Chinese export controls.",
+    author: 'Bihan Madhusankha',
+  },
+  {
     id: '60',
     title: "Google's Personalized Gemini AI Is Heading to Your Car: Full Fact-Checked Breakdown",
     slug: 'google-gemini-personalized-ai-android-auto-car-2026',
